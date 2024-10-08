@@ -1,0 +1,47 @@
+.has-error .help-block,
+.has-error .control-label,
+.has-error .radio,
+.has-error .checkbox,
+.has-error .radio-inline,
+.has-error .checkbox-inline {
+    color: #ec536c;
+}
+
+.has-error .form-control {
+    border-color: #ec536c;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+.has-error .form-control:focus {
+    border-color: #843534;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
+}
+
+.has-error .input-group-addon {
+    color: #ec536c;
+    background-color: #f2dede;
+    border-color: #ec536c;
+}
+
+.has-error .select2-container .select2-selection--single,
+.has-error .select2-container--default.select2-container .select2-selection--multiple,
+.has-error .bootstrap-tagsinput {
+    border-color: #ec536c;
+}
+
+.has-error .form-control-feedback {
+    color: #ec536c;
+}
+
+.form-control-static {
+    margin-bottom: 0;
+}
+
+.help-block {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 3px !important;
+    color: #737373;
+}
