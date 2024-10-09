@@ -1,0 +1,282 @@
+@font-face {
+    font-family: IndosatRegular;
+    src: url('/frontend/fonts/indosat/IndosatRegular-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: IndosatMedium;
+    src: url('/frontend/fonts/indosat/IndosatMedium-Medium.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: IndosatBold;
+    src: url('/frontend/fonts/indosat/IndosatBold-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: IndosatSansLight;
+    src: url('/frontend/fonts/indosat/IndosatSans-Light.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: IndosatSansItalic;
+    src: url('/frontend/fonts/indosat/IndosatSans-Italic.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: IndosatSansBold;
+    src: url('/frontend/fonts/indosat/IndosatSans-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+.indosat_regular {
+    font-family: 'IndosatRegular' !important;
+}
+
+.indosat_medium {
+    font-family: 'IndosatMedium' !important;
+}
+
+.indosat_bold {
+    font-family: "IndosatBold" !important;
+}
+
+.indosatsan_light {
+    font-family: 'IndosatSansLight' !important;
+}
+
+.indosatsan_italic {
+    font-family: 'IndosatSansItalic' !important;
+}
+
+.indosatsan_bold {
+    font-family: "IndosatSansBold" !important;
+}
+
+body {
+	font-family: 'IndosatRegular' !important;
+}
+
+@media (max-width: 992px) {
+	section#form {
+		margin-top: 50px;
+	}
+}
+
+.text-pink {
+	color: #EC008C !important;
+}
+
+.text-grey {
+	color: #4D4D4F !important;
+}
+
+.text-red {
+	color: #B7171D !important;
+}
+
+.new-line {
+   display: block;
+}
+
+.form {
+	padding: 20px;
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	opacity: 1;
+}
+
+.line-border {
+	border: 1px solid #B7161C;
+	padding: 60px;
+}
+
+.form-control {
+    border: solid 1.1px #707070;
+    color: #707070;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+img.coin1 {
+	position: absolute;
+	top: -50px;
+	right: -30px;
+	width: 140px;
+	z-index: 1;
+}
+
+img.coin2 {
+	position: absolute;
+	bottom: -50px;
+	left: -30px;
+	width: 140px;
+	z-index: 1;
+}
+
+section#users img.coin1 {
+	position: absolute;
+	top: -20px;
+	right: 80px;
+	width: 110px;
+	z-index: 1;
+}
+
+section#users img.coin2 {
+	bottom: 0px;
+	left: 70px;
+	width: 110px;
+}
+
+.fs-generasi-anti-judol {
+    font-size: 21px;
+}
+
+@media (max-width: 992px) {
+    .fs-generasi-anti-judol {
+        font-size: 18px;
+    }
+}
+
+.fs-title-registrasi_form {
+    font-size: 40px;
+    line-height: 40px;
+    text-shadow: 0px 6px 12px #0000004D;
+	opacity: 1;
+}
+
+@media (max-width: 992px) {
+
+	.line-border {
+		padding: 30px;
+	}
+
+	img.coin1 {
+		top: -50px;
+		right: 0px;
+		width: 120px;
+	}
+
+	img.coin2 {
+		bottom: -50px;
+		left: 0px;
+		width: 120px;
+	}
+
+	section#users img.coin1 {
+		top: -10px;
+		right: 20px;
+		width: 100px;
+	}
+
+	section#users img.coin2 {
+		bottom: 0px;
+		left: 20px;
+		width: 100px;
+	}
+
+    .fs-title-registrasi_form {
+        font-size: 35px;
+        line-height: 35px;
+
+    }
+}
+
+label.fs-label {
+    font-size: 18px;
+}
+
+@media (max-width: 992px) {
+    label.fs-label {
+        font-size: 16px;
+    }
+}
+
+.bg-total-partisipan {
+   	background: #fdfdfd 0% 0% no-repeat padding-box;
+	box-shadow: 0px 3px 6px #00000069;
+	border: 1px solid #B7161C;
+	border-radius: 72px;
+	padding:20px;
+}
+
+
+.fs-title-total-partisipan {
+	font-size: 40px;
+	text-shadow: 0px 6px 12px #0000004D;
+}
+
+.fs-total-partisipan {
+	font-size: 100px;
+	text-shadow: 0px 8px 16px #00000075;
+}
+
+@media (max-width: 992px) {
+
+	.bg-total-partisipan {
+		padding:10px;
+	}
+
+	.fs-title-total-partisipan {
+		font-size: 30px;
+	}
+
+	.fs-total-partisipan {
+		font-size: 60px;
+	}
+}
+
+
+.rounded-img {
+	border-radius: 40px;
+}
+
+.btn-register {
+    font-size: 20px;
+    border-color: none;
+    background: #B7171D;
+    box-shadow: 8px 8px 12px #00000029;
+}
+
+@media (max-width: 992px) {
+    .btn-register {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    .p-col-mobile {
+        padding: 0 30px !important;
+    }
+}
+
+.p-col-mobile-desktop {
+    padding:0 5px;
+}
+
+.fs-desc-activity {
+	font-size: 21px;
+}
+
+@media (max-width: 992px) {
+	.fs-desc-activity {
+		font-size: 18px;
+	}
+}

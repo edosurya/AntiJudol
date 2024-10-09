@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Participant;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\ThankYouMail;
 
 class HomeController extends Controller
 {
@@ -43,15 +45,17 @@ class HomeController extends Controller
             }
 
             DB::beginTransaction();
- 
             $register = Participant::create([
                 'fullname' => $request->fullname,
                 'email' => $request->email,
                 'link' => $request->link,
             ]);
 
-            DB::commit();
+            
+            Mail::to($request->email)->send(new ThankYouMail($register));
             $totalSubmission = Participant::all()->count();  
+            
+            DB::commit();
             return response()->json(['success' => true, 'message' => 'Data berhasil disimpan', 'with_toastr' => false, 'count' => $totalSubmission]);
         } catch (\Throwable $th) {
             DB::rollBack();

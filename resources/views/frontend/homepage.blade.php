@@ -7,6 +7,7 @@
     @push('css-plugin')
         @vite(['resources/js/app.js'])
         <link href="{{ asset('frontend/css/homepage.css') }}" rel="stylesheet" type="text/css" id="bootstrap">\
+        <link href="{{ asset('frontend/css/homepage2.css') }}" rel="stylesheet" type="text/css" id="bootstrap">\
     @endpush
 
     @push('style')
@@ -15,63 +16,70 @@
 
 @section('content')
 
-      <section class="bg-100 py-7 section-has-bg" style="background-image: url({{ asset('frontend/images/webp/bg-section-category.webp') }});" id="form">
+      <section class="bg-100 section-has-bg" style="background-image: url({{ asset('frontend/images/webp/background2.webp') }});">
         <div class="container-lg mb-5">
-          <div class="row">
-            <div class="col-12 col-md-7 mb-5">
-              <p class="text-white vivo_heavy text-uppercase fs-term-condition" >SYARAT & KETENTUAN</p>
-                <div class="fs-term-condition-other">
-                <p class="text-white"> Untuk informasi lebih lanjut, silakan klik tautan berikut ini:</p>
+          <div class="row align-items-center">
+            <div class="col-12 col-md-7 mb-5 h-100">
+              <div class="">
+                <img class="mb-3" src="{{ asset('frontend/images/webp/generasi-anti-judol.webp') }}" alt="" width="100%" loading="lazy" /> 
+                <div class="fs-generasi-anti-judol mt-3">
+                <p class="text-grey indosat_medium"> Generasi Anti Judi Online hadir sebagai platform untuk melaporkan dan memberantas aktivitas judi online yang merusak generasi bangsa. Melalui situs ini, kami mengajak semua lapisan masyarakat untuk berpartisipasi aktif dalam menjaga masa depan yang lebih bersih dan aman bagi anak-anak muda Indonesia.
+                </p>
+                <p class="text-red indosat_bold mt-4">Laporkan aktivitas Judol dengan mudah,<span class="new-line"></span> bersama kita bisa menghentikan <span class="new-line"></span> dampak negatif judi online!</p>
                 </div>
+              </div>
             </div>
-            <div class="col-12 col-md-5 mb-3">
-              <p class="text-white vivo_heavy text-uppercase mb-3 fs-title-registrasi_form" >REGISTRASI SEKARANG</p>
-              
-                <div class="alert alert-success invalid-feedback fw-bold mb-4" id="successMessage" role="alert"></div>
-                <div class="alert alert-danger invalid-feedback fw-bold mb-4" id="dzErrorMessage" role="alert">
-                </div>
+            
+              <div class="col-12 col-md-5 mb-3 position-relative">
+                <img src="{{ asset('frontend/images/webp/koin1.webp') }}" class="coin1" alt="koin1" />
+                <img src="{{ asset('frontend/images/webp/koin2.webp') }}" class="coin2" alt="koin1" />
+                <div class="form">
+                  <div class="line-border">
+                    <p class="text-red indosat_bold mb-4 fs-title-registrasi_form" >Lihat, Lapor, dan Blokir!</p>
+                    <div class="alert alert-success invalid-feedback fw-bold mb-4 indosat_bold" id="successMessage" role="alert"></div>
+                    <div class="alert alert-danger invalid-feedback fw-bold mb-4 indosat_bold" id="dzErrorMessage" role="alert"></div>
 
-                <form id="submitForm" enctype="multipart/form-data" class="position-relative">
+                    <form id="submitForm" enctype="multipart/form-data" class="position-relative text-grey">
 
-                    <div class="row text-white">
-                        <div class="mb-3 col-md-12">
-                            <label class="vivo_bold fs-label" for="fullname">
-                                Nama
-                                <span class="text-danger">*</span>
-                            </label>
-                            <input type="text" class="form-control" name="fullname" id="fullname"
-                                placeholder="Nama Lengkap">
-                            <label class="invalid-feedback fw-bold mb-3" id="fnErrorMessage"></label>
-                        </div>
+                        <div class="row text-grey" id="theForm">
+                            <div class="mb-3 col-md-12">
+                                <label class="indosat_bold fs-label" for="fullname">
+                                    Nama
+                                    <span class="text-danger">*</span>
+                                </label>
+                                <input type="text" class="form-control" name="fullname" id="fullname"
+                                    placeholder="Nama Lengkap">
+                                <label class="invalid-feedback fw-bold indosat_regular" id="fnErrorMessage"></label>
+                            </div>
 
-                        <div class="mb-3 col-md-12">
-                            <label class="vivo_bold fs-label" for="email">
-                                Email
-                                <span class="text-danger">*</span>
-                            </label>
-                            <input type="text" class="form-control" name="email" id="email"
-                                placeholder="Email">
-                            <label class="invalid-feedback fw-bold mb-3" id="mailErrorMessage"></label>
-                        </div>
+                            <div class="mb-3 col-md-12">
+                                <label class="indosat_bold fs-label" for="email">
+                                    E-mail
+                                    <span class="text-danger">*</span>
+                                </label>
+                                <input type="text" class="form-control" name="email" id="email"
+                                    placeholder="Email">
+                                <label class="invalid-feedback fw-bold indosat_regular" id="mailErrorMessage"></label>
+                            </div>
 
 
-                        <div class="mb-3 col-md-12 mb-0 pb-0">
-                            <label class="vivo_bold fs-label" for="url">
-                                URL
-                                <span class="text-danger">*</span>
-                            </label>
-                            <input type="text" class="form-control" name="url" id="url"placeholder="www.example.com" />
-                            <label class="invalid-feedback fw-bold mb-3" id="urlErrorMessage"></label>
-                        </div>
+                            <div class="mb-3 col-md-12 mb-0 pb-0">
+                                <label class="indosat_bold fs-label" for="url">
+                                    Link Judol
+                                    <span class="text-danger">*</span>
+                                </label>
+                                <input type="text" class="form-control" name="url" id="url"placeholder="www.example.com" />
+                                <label class="invalid-feedback fw-bold indosat_regular" id="urlErrorMessage"></label>
+                            </div>
 
-                        <div class="mb-3 col-md-12 mb-0 pb-0 d-grid">
-                            <button class="btn rounded-3 text-black vivo_heavy btn-register text-btn-padding text-btn-padding">SUBMIT</button>
-                        </div>
+                            <div class="mb-3 mt-3 col-md-12 mb-0 pb-0">
+                                <button class="btn rounded-pill text-white indosat_bold btn-register text-btn-padding py-1">Submit</button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
                     </div>
-
-                </form>
-
-            </div>
+                </div>
           </div>
         </div>
 
@@ -80,33 +88,74 @@
 
       <!-- ============================================-->
       <!-- <section> Periode ============================-->
-      <section class="pb-6 bg-black period" >
+      <section class="bg-100 py-7 section-has-bg" style="background-image: url({{ asset('frontend/images/webp/background1.webp') }});" id="users">
 
         <div class="container-lg">
-          <div class="row justify-content-center" data-aos="fade-down" data-aos-duration="1500">
+          <div class="row justify-content-center">
             <div class="col-md-12 col-lg-12 text-center mb-4">
-              <h2 class="text-white vivo_heavy text-uppercase">Total</h2>
+              <h2 class="text-grey indosat_bold fs-title-total-partisipan">Angka Total Partisipan</h2>
+              <img class="mb-3" src="{{ asset('frontend/images/webp/generasi-anti-judol.webp') }}" alt="" width="80%" loading="lazy" /> 
             </div>
           </div>
-          <div class="row justify-content-center text-white" data-aos="fade-up" data-aos-duration="2500" data-aos-once="true">
-            <div class="col-md-3 col-4 p-col-mobile-desktop mt-4">
-              <div class="card h-100 bg-period">
-                <div class="inner">&nbsp;</div>
+          <div class="row justify-content-center text-white position-relative">
+            <img src="{{ asset('frontend/images/webp/koin1.webp') }}" class="coin1" alt="koin1" />
+            <img src="{{ asset('frontend/images/webp/koin2.webp') }}" class="coin2" alt="koin1" />
+            <div class="col-md-10 col-10 p-col-mobile-desktop">
+              <div class="card h-60 bg-total-partisipan">
                 <div class="card-body d-flex flex-column justify-content-around mx-auto text-center">
-                    <p class="my-4 text-white vivo_bold fs-period-date lh-1 fs-4" id="totalSubmission">{{ $totalSubmission }}</p>
+                    <p class="my-4 text-red indosat_bold fs-period-date lh-1 fs-total-partisipan" id="totalSubmission">{{ $totalSubmission }}</p>
                 </div>
               </div>
+              <!-- <p class="text-white fs-3 text-center mt-3" id="time"></p> -->
             </div>
           </div>
-
          </div>
 
       </section>
 
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+<!-- ============================================-->
+      <!-- <section> Category  ============================-->
+
+      <section class="bg-100 py-3 section-has-bg" style="background-image: url({{ asset('frontend/images/webp/background2.webp') }});">
+
+        <div class="container-lg mt-2 py-7">
+          <div class="row text-center justify-content-center text-white p-2">
+            <div class="col-md-4 p-col-mobile" >
+              <img class="img-fluid rounded-img mb-3" src="{{ asset('frontend/images/webp/img1.webp') }}" alt="" loading="lazy" />
+            </div>
+            <div class="col-md-4 p-col-mobile">
+              <img class="img-fluid rounded-img mb-3" src="{{ asset('frontend/images/webp/img2.webp') }}" alt="" loading="lazy" />
+            </div>
+            <div class="col-md-4 p-col-mobile">
+              <img class="img-fluid rounded-img mb-3" src="{{ asset('frontend/images/webp/img3.webp') }}" alt="" loading="lazy" />
+            </div>
+            <div class="col-12">
+              <p class="text-grey indosat_bold fs-desc-activity">Sosialisasi seru bersama pemuda tentang bahaya judi online! Edukasi interaktif ini diharapkan dapat meningkatkan kesadaran masyarakat untuk menjaga generasi muda dari dampak negatif judi.</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- end of .container-->
+
+
+      </section>
 
       <!-- <section> close ============================-->
       <!-- ============================================-->
 
+
+    <script id="dzLoadingOverlay" type="text/template">
+        <div class="dz-loading-div">
+            <div class="position-absolute w-100 h-100 start-0 top-0 d-flex align-items-center justify-content-center rounded-3 z-3">
+                <div class="spinner-border text-red" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        </div>
+    </script>
 
 @endsection
 
@@ -118,17 +167,4 @@
 @endpush
 
 @push('script')
-<script type="text/javascript">
-   $(function() {
-    $('.scroll-down').click (function() {
-
-      var windowHeight = window.innerHeight;
-      var percent = 80;
-      var percentPixel = windowHeight * (percent / 100);
-
-      $('html, body').animate({scrollTop: percentPixel }, 'slow');
-      return false;
-    });
-  });
-</script>
 @endpush

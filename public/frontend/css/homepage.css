@@ -1,111 +1,9 @@
 
-@font-face {
-    font-family: vivoSansGlobal-Regular;
-    src: url('/frontend/fonts/vivo/vivoSansGlobal-Regular.ttf');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: vivoSansGlobal-Medium;
-    src: url('/frontend/fonts/vivo/vivoSansGlobal-Medium.ttf');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: vivoSansGlobal-Heavy;
-    src: url('/frontend/fonts/vivo/vivoSansGlobal-Heavy.ttf');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: vivoSansGlobal-Extrabold;
-    src: url('/frontend/fonts/vivo/vivoSansGlobal-Extrabold.ttf');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: vivoSansGlobal-Bold;
-    src: url('/frontend/fonts/vivo/vivoSansGlobal-Bold.ttf');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: vivoSansGlobal-Extralight;
-    src: url('/frontend/fonts/vivo/vivoSansGlobal-Extralight.ttf');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: vivoSansGlobal-Light;
-    src: url('/frontend/fonts/vivo/vivoSansGlobal-Light.ttf');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: vivoSansGlobal-Thin;
-    src: url('/frontend/fonts/vivo/vivoSansGlobal-Thin.ttf');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-.vivo_regular {
-    font-family: 'vivoSansGlobal-Regular' !important;
-}
-
-.vivo_medium {
-    font-family: 'vivoSansGlobal-Medium' !important;
-}
-
-.vivo_heavy {
-    font-family: "vivoSansGlobal-Heavy" !important;
-}
-
-.vivo_extraBold {
-    font-family: "vivoSansGlobal-Extrabold" !important;
-}
-
-.vivo_bold {
-    font-family: "vivoSansGlobal-Bold" !important;
-}
-
-.vivo_extraLight {
-    font-family: "vivoSansGlobal-Extralight" !important;
-}
-
-.vivo_light {
-    font-family: "vivoSansGlobal-Light" !important;
-}
-
-.vivo_thin {
-    font-family: "vivoSansGlobal-Thin" !important;
-}
-
-body {
-	font-family: 'vivoSansGlobal-Regular' !important;
-}
 
 nav {
 	background-color: white;
 }
 
-.navbar-collapse > .navbar-nav {
-    text-align: right;
-}
 
 .navbar-light .navbar-nav .nav-link:hover {
     color: #000000;
@@ -222,20 +120,6 @@ li >.nav-item {
 }
 
 
-.vivo-ipa-logo img{
-    width:40%;
-}
-
-@media (max-width: 992px) {
-    .vivo-ipa-logo{
-        margin-left: 5px;
-    }
-
-    .vivo-ipa-logo img{
-        width:70%;
-    }
-}
-
 .inner {
     width: 20%;
     height: 0;
@@ -268,41 +152,10 @@ li >.nav-item {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgb(0 0 0 / 79%);
 }
 
-.fs-how-to-desc {
-    font-size: 24px;
-}
 
-.fs-desc-schedule {
-    font-size: 26px;
-}
 
-@media (max-width: 992px) {
-    .fs-how-to-desc {
-        font-size: 20px;
-    }
-
-    .fs-desc-schedule{
-        font-size: 21px;
-    }
-}
-
-.btn-register {
-    letter-spacing: 4px;
-    font-size: 20px;
-    border-color: none;
-    background: rgb(42,144,190);
-    background: linear-gradient(90deg, rgba(42,144,190,1) 0%, rgba(114,216,221,1) 49%, rgba(42,144,190,1) 100%);
-}
-
-@media (max-width: 992px) {
-    .btn-register {
-        letter-spacing: 3px;
-        font-size: 15px;
-    }
-}
 
 .btn-register:hover {
     background: linear-gradient(90deg, rgb(53 173 227) 0%, rgba(114, 216, 221, 1) 49%, rgba(53 173 227, 1) 100%);
@@ -348,134 +201,7 @@ h6 {
     }
 }
 
-.fs-desc-category {
-    font-size: 24px;
-}
 
-@media (max-width: 992px) {
-    .fs-desc-category {
-        font-size: 18px;
-    }
-}
-
-.rounded-4 {
-    border-radius: 1rem !important;
-}
-
-.img-tag {
-    background: rgba(0,0,0,0.5);
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-}
-
-.img-wrapper {  
-  width: auto;
-  height: auto;
-  overflow: hidden; 
-  border-radius: 20px;
-}
-
-.inner-img {
-  transition: 0.3s;
-}
-
-.inner-img:hover {
-  transform: scale(1.1);
-}
-
-.fs-category-name {
-    font-size: 20px;
-}
-
-@media (max-width: 992px) {
-    .fs-category-name {
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 992px) {
-    .p-col-mobile {
-        padding: 0 5px !important;
-    }
-}
-
-.p-col-mobile-desktop {
-    padding:0 5px;
-}
-
-.fs-judge-title {
-    font-size: 27px;
-}
-
-.fs-judge-desc {
-    font-size: 22px;
-    line-height: 23px;
-} 
-
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  width: 100%;
-}
-
-@media (max-width: 992px) {
-    .fs-judge-title {
-        font-size: 16px;
-        line-height: 16px;
-    }
-
-    .fs-judge-desc {
-        font-size: 14px;
-    } 
-}
-
-@media (max-width: 391px) {
-    .center {
-      height: 35px;
-    }
-
-    .fs-judge-title {
-        font-size: 13px;
-        line-height: 13px;
-    }
-
-    .fs-judge-desc {
-        font-size: 13px;
-    } 
-}
-
-.bd-highlight {
-    min-height: 70px;
-}
-
-.fs-prize-title {
-    font-size: 35px;
-}
-
-@media (max-width: 992px) {
-    .fs-prize-title {
-        font-size: 20px;
-        line-height: 23px;
-    }
-}
-
-.fs-prize-desc {
-    font-size: 22px;
-}
-
-@media (max-width: 992px) {
-    .fs-prize-desc {
-        font-size: 18px;
-    }
-}
-
-.bg-period {
-    border-color: none;
-    background: rgb(2,39,70);
-    background: linear-gradient(0deg, rgba(2,39,70,1) 58%, rgba(14,85,109,1) 100%);
-}
 
 .fs-period-date {
     font-size: 27px;
@@ -497,29 +223,7 @@ h6 {
     }
 
 }
-.img-mechanism {
-    width: 35%;
-}
 
-@media (max-width: 992px) {
-    .img-mechanism {
-        width: 60%;
-    }
-
-}
-.fs-desc-mechanism {
-    font-size: 22px;
-    line-height: 23px;
-}
-
-@media (max-width: 992px) {
-
-    .fs-desc-mechanism {
-        font-size: 14px;
-        line-height: 15px;
-    }
-
-}
 
 .arrow-icon {
     top:50px; right:-25px; color: #167588;
@@ -541,26 +245,12 @@ h6 {
     }
 }
 
-label.fs-label {
-    font-size: 21px;
-}
 
-@media (max-width: 992px) {
-    label.fs-label {
-        font-size: 18px;
-    }
-}
 
 input::placeholder {
     font-family: "vivoSansGlobal-Thin" !important;
 }
 
-.form-control {
-    background-color: transparent;
-    border: solid 1.1px white;
-    color: white;
-    padding: 8px 8px;
-}
 
 .form-control:read-only {
     background-color: transparent; 
@@ -658,21 +348,6 @@ svg.dz-photo-icon {
     line-height: 40px;
 }
 
-.fs-title-registrasi_form {
-    font-size: 40px;
-}
-
-@media (max-width: 992px) {
-    .fs-term-condition {
-        font-size: 35px;
-        line-height: 35px;
-    }
-    .fs-title-registrasi_form {
-        font-size: 35px;
-        line-height: 35px;
-
-    }
-}
 
 .w-upload-file {
     width: 30%;
@@ -692,15 +367,7 @@ svg.dz-photo-icon {
     display: inline-block;
 }
 
-.fs-term-condition-other {
-    font-size: 21px;
-}
 
-@media (max-width: 992px) {
-    .fs-term-condition-other {
-        font-size: 18px;
-    }
-}
 
 .border-blue-gradient {
   border-image: linear-gradient(to right, rgba(42,144,190,1) 0%, rgba(114,216,221,1) 49%, rgba(42,144,190,1) 100%) 1;
@@ -769,7 +436,7 @@ background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none'
 }
 
 .text-btn-padding {
-    padding: 8px 10px 4px 10px;
+    padding: 8px 20px 4px 20px;
 }
 
 .fs-term-condition-modal {
@@ -789,14 +456,7 @@ background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none'
         padding: 1px;
     }
 }
- .new-line {
-   margin: -3px;
-}
-@media (max-width: 822px) {
-    .new-line {
-       display: block;
-    }
-}
+
 
 
 
