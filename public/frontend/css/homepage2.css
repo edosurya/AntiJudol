@@ -280,3 +280,19 @@ label.fs-label {
 		font-size: 18px;
 	}
 }
+
+img.number {
+	width: 70px;
+}
+
+@media (max-width: 992px) {
+	img.number {
+		width: 50px;
+	}
+}
+
+@media (max-width: 375px) {
+	img.number {
+		width: 40px;
+	}
+}

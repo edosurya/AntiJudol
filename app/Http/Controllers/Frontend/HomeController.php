@@ -12,9 +12,11 @@ use App\Mail\ThankYouMail;
 class HomeController extends Controller
 {
     public function index()
-    {
-        $totalSubmission = Participant::all()->count();        
-        return view('frontend.homepage', compact('totalSubmission'));
+    {   
+        $totalSubmission = Participant::all()->count();  
+        // $totalSubmission = 10000;
+        $numbers = str_split((string)$totalSubmission);   
+        return view('frontend.homepage', compact('numbers'));
     }
 
     /**
@@ -52,11 +54,12 @@ class HomeController extends Controller
             ]);
 
             
-            Mail::to($request->email)->send(new ThankYouMail($register));
+            // Mail::to($request->email)->send(new ThankYouMail($register));
             $totalSubmission = Participant::all()->count();  
+            $numbers = str_split((string)$totalSubmission);
             
             DB::commit();
-            return response()->json(['success' => true, 'message' => 'Data berhasil disimpan', 'with_toastr' => false, 'count' => $totalSubmission]);
+            return response()->json(['success' => true, 'message' => 'Data berhasil disimpan', 'with_toastr' => false, 'numbers' => $numbers]);
         } catch (\Throwable $th) {
             DB::rollBack();
             return response()->json($th->getMessage(), 404); 

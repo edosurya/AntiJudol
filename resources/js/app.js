@@ -95,8 +95,15 @@ $(document).ready(function() {
                 $('#fullname').val('');
                 $('#email').val('');
                 $('#url').val('');
-                console.log(response.count);
-                totalSubmission.text(response.count);
+                var numbers = response.numbers;
+                var text = '';
+                var i;
+                for (let i = 0; i < numbers.length; i++) {
+                  text += `<img class="number px-1" src="../frontend/images/webp/`+numbers[i]+`.webp" alt="" loading="lazy" />`;
+                  console.log(text);
+                }
+
+                totalSubmission.html(text);
             },
             error: function(xhr) {
                 // Handle server-side validation errors

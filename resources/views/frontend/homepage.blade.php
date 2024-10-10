@@ -103,7 +103,11 @@
             <div class="col-md-10 col-10 p-col-mobile-desktop">
               <div class="card h-60 bg-total-partisipan">
                 <div class="card-body d-flex flex-column justify-content-around mx-auto text-center">
-                    <p class="my-4 text-red indosat_bold fs-period-date lh-1 fs-total-partisipan" id="totalSubmission">{{ $totalSubmission }}</p>
+                    <div class="my-4 d-flex flex-row bd-highlight" id="totalSubmission">
+                      @foreach($numbers as $n)
+                        <img class="number px-1" src="{{ asset('frontend/images/webp/'.$n.'.webp') }}" alt="" loading="lazy" />
+                      @endforeach
+                    </div>
                 </div>
               </div>
               <!-- <p class="text-white fs-3 text-center mt-3" id="time"></p> -->
