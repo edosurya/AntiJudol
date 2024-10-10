@@ -44,12 +44,12 @@ $(document).ready(function() {
 
         // Name validation
         if (name === '') {
-            fnErrorMessage.show().text('Wajib Diisi');
+            fnErrorMessage.show().text('Wajib diisi');
             isValid = false;
         }
         // Email validation
         if (email === '') {
-            mailErrorMessage.show().text('Wajib Diisi');
+            mailErrorMessage.show().text('Wajib diisi');
             isValid = false;
         } else if (!validateEmail(email)) {
             mailErrorMessage.show().text('Format email salah');

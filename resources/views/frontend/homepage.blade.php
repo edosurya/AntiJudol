@@ -6,7 +6,6 @@
 
     @push('css-plugin')
         @vite(['resources/js/app.js'])
-        <link href="{{ asset('frontend/css/homepage.css') }}" rel="stylesheet" type="text/css" id="bootstrap">
         <link href="{{ asset('frontend/css/homepage2.css') }}" rel="stylesheet" type="text/css" id="bootstrap">
     @endpush
 
@@ -26,7 +25,7 @@
               <div class="col-12 col-md-7 mb-5 h-100">
                   <img class="mb-3" src="{{ asset('frontend/images/webp/generasi-anti-judol.webp') }}" alt="" width="100%" loading="lazy" /> 
                   <div class="fs-generasi-anti-judol mt-3">
-                  <p class="text-grey indosat_medium"> Generasi Anti Judi Online hadir sebagai platform untuk melaporkan dan memberantas aktivitas judi online yang merusak generasi bangsa. Melalui situs ini, kami mengajak semua lapisan masyarakat untuk berpartisipasi aktif dalam menjaga masa depan yang lebih bersih dan aman bagi anak-anak muda Indonesia.
+                  <p class="text-grey indosat_medium"> Generasi Anti Judi Online hadir sebagai platform untuk melaporkan dan memberantas aktivitas judi online yang merusak generasi bangsa. <span class="new-line"></span>Melalui situs ini, kami mengajak semua lapisan masyarakat untuk berpartisipasi aktif dalam menjaga masa depan yang lebih bersih dan aman bagi anak-anak muda Indonesia.
                   </p>
                   <p class="text-red indosat_bold mt-4">Laporkan aktivitas Judol dengan mudah,<span class="new-line"></span> bersama kita bisa menghentikan <span class="new-line"></span> dampak negatif judi online!</p>
                   </div>
@@ -38,7 +37,7 @@
                 <img src="{{ asset('frontend/images/webp/koin2.webp') }}" class="coin2" alt="koin1" />
                 <div class="form">
                   <div class="line-border">
-                    <p class="text-red indosat_bold mb-4 fs-title-registrasi_form" >Lihat, Lapor, dan Blokir!</p>
+                    <p class="text-red indosat_bold mb-4 fs-title-registrasi_form" >Lihat, Lapor, <span class="new-line"></span>dan Blokir!</p>
                     <div class="alert alert-success invalid-feedback fw-bold mb-4 indosat_bold" id="successMessage" role="alert"></div>
                     <div class="alert alert-danger invalid-feedback fw-bold mb-4 indosat_bold" id="dzErrorMessage" role="alert"></div>
 
@@ -106,7 +105,7 @@
             <div class="col-md-10 col-10 p-col-mobile-desktop">
               <div class="card h-60 bg-total-partisipan">
                 <div class="card-body d-flex flex-column justify-content-around mx-auto text-center">
-                    <div class="my-4 d-flex flex-row bd-highlight" id="totalSubmission">
+                    <div class="my-3 my-sm-1 d-flex flex-row bd-highlight" id="totalSubmission">
                       @foreach($numbers as $n)
                         <img class="number px-1" src="{{ asset('frontend/images/webp/'.$n.'.webp') }}" alt="" loading="lazy" />
                       @endforeach

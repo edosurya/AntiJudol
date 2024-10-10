@@ -67,22 +67,22 @@
         <td style="width: 288px;vertical-align: top; padding-left: 0; padding-right: 0; padding-top: 15px; padding-bottom: 15px;">
 
           <!-- Your logo is here -->
-          <img style="text-align: center; color: #ffffff;" alt="Logo" src="https://www.imghippo.com/i/XFaVR1728547931.png" align="center" width="50">
+          <img style="text-align: center; color: #ffffff;" alt="Logo" src="https://i.imghippo.com/files/XFaVR1728547931.png" align="center" width="50">
 
         </td>
         <td style="width: 288px;vertical-align: top; padding-left: 0; padding-right: 0; padding-top: 15px; padding-bottom: 15px;">
 
           <!-- Your logo is here -->
-          <img style="text-align: center; color: #ffffff;" alt="Logo" src="https://www.imghippo.com/i/R8HT11728547873.png" align="center" width="120">
+          <img style="text-align: center; color: #ffffff;" alt="Logo" src="https://i.imghippo.com/files/R8HT11728547873.png" align="center" width="120">
 
         </td>
       </tr>
     </tbody>
   </table>
   <!-- End container for logo -->
-  
+
   <!-- Start container for logo -->
-  <table align="center" style="text-align: center; vertical-align: top; width: 600px; max-width: 600px; background-color: #ffffff; padding-top:40px;" width="600">
+  <table align="center" style="text-align: center; vertical-align: top; width: 600px; max-width: 600px; background-color: #ffffff;" width="600">
     <tbody>
       <tr>
         <td style="width: 596px; vertical-align: top; padding-left: 0; padding-right: 0; padding-top: 15px; padding-bottom: 15px;" width="596">
@@ -103,17 +103,13 @@
       <tr>
         <td style="width: 596px; vertical-align: top; padding-left: 30px; padding-right: 30px; padding-top: 30px; padding-bottom: 40px;" width="596">
 
-          <h1 style="font-size: 20px; line-height: 24px; font-family: 'Helvetica', Arial, sans-serif; font-weight: 600; text-decoration: none; color: #000000;">Halo {{ $fullname }}</h1>
+          <h1 style="font-size: 20px; line-height: 24px; font-family: 'Helvetica', Arial, sans-serif; font-weight: 600; text-decoration: none; color: #000000;">Halo {{ $fullname }},</h1>
 
-          <p style="font-size: 15px; line-height: 24px; font-family: 'Helvetica', Arial, sans-serif; font-weight: 400; text-decoration: none; color: #4D4D4F;">
+          <p style="font-size: 17px; line-height: 24px; font-family: 'Helvetica', Arial, sans-serif; font-weight: 400; text-decoration: none; color: #4D4D4F;">
             
-            Terima kasih telah melaporkan kegiatan judi online yang Anda temukan di dunia digital melalui platform kami. Dukungan Anda sangat berarti dalam upaya menciptakan lingkungan digital yang lebih aman dan bersih dari tindakan ilegal.
-
-Kami mengajak Anda untuk terus menjadi bagian dari gerakan Generasi Anti Judol dengan selalu menyebarkan pesan positif dan mengingatkan orang-orang di sekitar kita tentang bahaya dan dampak negatif judi online. Bersama, kita bisa membangun masa depan yang lebih baik untuk generasi mendatang.
-
-Jika Anda memiliki informasi lebih lanjut atau laporan lain yang ingin disampaikan, jangan ragu untuk menghubungi kami.
-
-Sekali lagi, terima kasih atas partisipasi dan dukungan Anda.
+            Terima kasih telah melaporkan kegiatan judi online yang Anda temukan di dunia digital melalui platform kami. Dukungan Anda sangat berarti dalam upaya menciptakan lingkungan digital yang lebih aman dan bersih dari tindakan ilegal. Kami mengajak Anda untuk terus menjadi bagian dari gerakan Generasi Anti Judol dengan selalu menyebarkan pesan positif dan mengingatkan orang-orang di sekitar kita tentang bahaya dan dampak negatif judi online. Bersama, kita bisa membangun masa depan yang lebih baik untuk generasi mendatang.<br><br>
+            Jika Anda memiliki informasi lebih lanjut atau laporan lain yang ingin disampaikan, jangan ragu untuk menghubungi kami. <br>
+            Sekali lagi, terima kasih atas partisipasi dan dukungan Anda.
 <br>
 <br>
 Salam,<br>

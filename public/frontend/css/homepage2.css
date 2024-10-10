@@ -230,7 +230,6 @@ label.fs-label {
 	box-shadow: 0px 3px 6px #00000069;
 	border: 1px solid #B7161C;
 	border-radius: 72px;
-	padding:20px;
 }
 
 
@@ -248,6 +247,7 @@ label.fs-label {
 
 	.bg-total-partisipan {
 		padding:10px;
+		border-radius: 50px;
 	}
 
 	.fs-title-total-partisipan {
@@ -298,17 +298,21 @@ label.fs-label {
 }
 
 img.number {
-	width: 70px;
+	width: 140px;
 }
 
 @media (max-width: 992px) {
 	img.number {
-		width: 50px;
+		width: 60px;
 	}
 }
 
 @media (max-width: 375px) {
 	img.number {
 		width: 40px;
+	}
+
+	.card-body {
+		padding: 0px;
 	}
 }
