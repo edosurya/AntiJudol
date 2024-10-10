@@ -6,8 +6,8 @@
 
     @push('css-plugin')
         @vite(['resources/js/app.js'])
-        <link href="{{ asset('frontend/css/homepage.css') }}" rel="stylesheet" type="text/css" id="bootstrap">\
-        <link href="{{ asset('frontend/css/homepage2.css') }}" rel="stylesheet" type="text/css" id="bootstrap">\
+        <link href="{{ asset('frontend/css/homepage.css') }}" rel="stylesheet" type="text/css" id="bootstrap">
+        <link href="{{ asset('frontend/css/homepage2.css') }}" rel="stylesheet" type="text/css" id="bootstrap">
     @endpush
 
     @push('style')
@@ -16,19 +16,22 @@
 
 @section('content')
 
-      <section class="bg-100 section-has-bg" style="background-image: url({{ asset('frontend/images/webp/background2.webp') }});">
+      <section id="first" class="bg-100 section-has-bg" style="background-image: url({{ asset('frontend/images/webp/background2.webp') }});" >
+        <div class="mb-5 d-flex flex-row justify-content-between">
+            <a class="logo" href="#"><img src="{{ asset('frontend/images/webp/kominfo.webp') }}" alt="" width="50" /></a>
+            <a class="logo" href="#"><img src="{{ asset('frontend/images/webp/IOH-logo.webp') }}" alt="" width="120" /></a>
+        </div>
         <div class="container-lg mb-5">
           <div class="row align-items-center">
-            <div class="col-12 col-md-7 mb-5 h-100">
-              <div class="">
-                <img class="mb-3" src="{{ asset('frontend/images/webp/generasi-anti-judol.webp') }}" alt="" width="100%" loading="lazy" /> 
-                <div class="fs-generasi-anti-judol mt-3">
-                <p class="text-grey indosat_medium"> Generasi Anti Judi Online hadir sebagai platform untuk melaporkan dan memberantas aktivitas judi online yang merusak generasi bangsa. Melalui situs ini, kami mengajak semua lapisan masyarakat untuk berpartisipasi aktif dalam menjaga masa depan yang lebih bersih dan aman bagi anak-anak muda Indonesia.
-                </p>
-                <p class="text-red indosat_bold mt-4">Laporkan aktivitas Judol dengan mudah,<span class="new-line"></span> bersama kita bisa menghentikan <span class="new-line"></span> dampak negatif judi online!</p>
-                </div>
+              <div class="col-12 col-md-7 mb-5 h-100">
+                  <img class="mb-3" src="{{ asset('frontend/images/webp/generasi-anti-judol.webp') }}" alt="" width="100%" loading="lazy" /> 
+                  <div class="fs-generasi-anti-judol mt-3">
+                  <p class="text-grey indosat_medium"> Generasi Anti Judi Online hadir sebagai platform untuk melaporkan dan memberantas aktivitas judi online yang merusak generasi bangsa. Melalui situs ini, kami mengajak semua lapisan masyarakat untuk berpartisipasi aktif dalam menjaga masa depan yang lebih bersih dan aman bagi anak-anak muda Indonesia.
+                  </p>
+                  <p class="text-red indosat_bold mt-4">Laporkan aktivitas Judol dengan mudah,<span class="new-line"></span> bersama kita bisa menghentikan <span class="new-line"></span> dampak negatif judi online!</p>
+                  </div>
+           
               </div>
-            </div>
             
               <div class="col-12 col-md-5 mb-3 position-relative">
                 <img src="{{ asset('frontend/images/webp/koin1.webp') }}" class="coin1" alt="koin1" />
@@ -87,7 +90,7 @@
 
 
       <!-- ============================================-->
-      <!-- <section> Periode ============================-->
+      <!-- <section> Result ============================-->
       <section class="bg-100 py-7 section-has-bg" style="background-image: url({{ asset('frontend/images/webp/background1.webp') }});" id="users">
 
         <div class="container-lg">
@@ -120,8 +123,8 @@
       <!-- <section> close ============================-->
       <!-- ============================================-->
 
-<!-- ============================================-->
-      <!-- <section> Category  ============================-->
+      <!-- ============================================-->
+      <!-- <section> Activity  ============================-->
 
       <section class="bg-100 py-3 section-has-bg" style="background-image: url({{ asset('frontend/images/webp/background2.webp') }});">
 

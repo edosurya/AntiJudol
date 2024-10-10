@@ -1,5 +1,5 @@
 
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 indosat_bold" data-navbar-on-scroll="data-navbar-on-scroll">
+      <nav class="navbar navbar-expand-lg navbar-light py-3 indosat_bold" data-navbar-on-scroll="data-navbar-on-scroll">
         <div class="container-lg d-flex justify-content-between">
           <div>
           <a class="navbar-brand" href="#"><img src="{{ asset('frontend/images/webp/IOH-logo.webp') }}" alt="" width="120" /></a>

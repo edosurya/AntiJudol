@@ -51,10 +51,6 @@
       text-decoration: none;
       color: #000000;
     }
-<h1 style="text-align:left">This is heading 1</h2>
-<h2 style="text-align:left">This is heading 2</h2>
-<h3 style="text-align:right">This is heading 3</h3>
-<h4 style="text-align:justify">This is heading 4</h4>
   </style>
   <!-- End stylesheet -->
 
@@ -68,8 +64,28 @@
   <table align="center" style="text-align: center; vertical-align: top; width: 600px; max-width: 600px; background-color: #ffffff; padding-top:40px;" width="600">
     <tbody>
       <tr>
-        <td style="width: 596px; vertical-align: top; padding-left: 0; padding-right: 0; padding-top: 15px; padding-bottom: 15px;" width="596">
+        <td style="width: 288px;vertical-align: top; padding-left: 0; padding-right: 0; padding-top: 15px; padding-bottom: 15px;">
 
+          <!-- Your logo is here -->
+          <img style="text-align: center; color: #ffffff;" alt="Logo" src="https://www.imghippo.com/i/XFaVR1728547931.png" align="center" width="50">
+
+        </td>
+        <td style="width: 288px;vertical-align: top; padding-left: 0; padding-right: 0; padding-top: 15px; padding-bottom: 15px;">
+
+          <!-- Your logo is here -->
+          <img style="text-align: center; color: #ffffff;" alt="Logo" src="https://www.imghippo.com/i/R8HT11728547873.png" align="center" width="120">
+
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- End container for logo -->
+  
+  <!-- Start container for logo -->
+  <table align="center" style="text-align: center; vertical-align: top; width: 600px; max-width: 600px; background-color: #ffffff; padding-top:40px;" width="600">
+    <tbody>
+      <tr>
+        <td style="width: 596px; vertical-align: top; padding-left: 0; padding-right: 0; padding-top: 15px; padding-bottom: 15px;" width="596">
           <!-- Your logo is here -->
           <img style="text-align: center; color: #ffffff;" alt="Logo" src="https://i.imghippo.com/files/igd9F1728538040.png" align="center" width="500">
 

@@ -71,13 +71,29 @@
     font-family: "IndosatSansBold" !important;
 }
 
+@media (min-width: 1200px) {
+    .container-xl, .container-lg, .container-md, .container-sm, .container {
+        max-width: 1400px;
+    }
+}
+
+
 body {
 	font-family: 'IndosatRegular' !important;
 }
 
+.logo {
+	margin: 5px 40px;
+}
+
+section#first {
+	padding-top: 1.5rem;
+	padding-bottom: 4rem;
+}
+
 @media (max-width: 992px) {
-	section#form {
-		margin-top: 50px;
+	.logo {
+		margin: 5px 20px;
 	}
 }
 

@@ -54,7 +54,7 @@ class HomeController extends Controller
             ]);
 
             
-            // Mail::to($request->email)->send(new ThankYouMail($register));
+            Mail::to($request->email)->send(new ThankYouMail($register));
             $totalSubmission = Participant::all()->count();  
             $numbers = str_split((string)$totalSubmission);
             

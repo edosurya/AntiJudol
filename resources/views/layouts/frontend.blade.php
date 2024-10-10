@@ -62,12 +62,7 @@
     <!-- ===============================================-->
     <!--    Main Content-->
     <!-- ===============================================-->
-    <main class="main bg-black" id="top">
-
-        @include('components.frontend.nav')
-
-        @yield('hero')
-        
+    <main class="main" id="top">
         @yield('content')
     </main>
 
