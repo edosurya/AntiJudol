@@ -15,14 +15,14 @@
 
 @section('content')
 
-      <section id="first" class="bg-100 section-has-bg" style="background-image: url({{ asset('frontend/images/webp/background2.webp') }});" >
+      <section id="first" class="bg-100 section-has-bg" style="background-image: url({{ asset('frontend/images/webp/background.webp') }});" >
         <div class="mb-5 d-flex flex-row justify-content-between">
             <a class="logo" href="#"><img src="{{ asset('frontend/images/webp/kominfo.webp') }}" alt="" width="50" /></a>
             <a class="logo" href="#"><img src="{{ asset('frontend/images/webp/IOH-logo.webp') }}" alt="" width="120" /></a>
         </div>
         <div class="container-lg mb-5">
           <div class="row align-items-center">
-              <div class="col-12 col-md-7 mb-5 h-100">
+              <div class="col-12 col-sm-7 mb-5 h-100">
                   <img class="mb-3" src="{{ asset('frontend/images/webp/generasi-anti-judol.webp') }}" alt="" width="100%" loading="lazy" /> 
                   <div class="fs-generasi-anti-judol mt-3">
                   <p class="text-grey indosat_medium"> Generasi Anti Judi Online hadir sebagai platform untuk melaporkan dan memberantas aktivitas judi online yang merusak generasi bangsa. <span class="new-line"></span>Melalui situs ini, kami mengajak semua lapisan masyarakat untuk berpartisipasi aktif dalam menjaga masa depan yang lebih bersih dan aman bagi anak-anak muda Indonesia.
@@ -32,7 +32,7 @@
            
               </div>
             
-              <div class="col-12 col-md-5 mb-3 position-relative">
+              <div class="col-12 col-sm-5 mb-3 position-relative">
                 <img src="{{ asset('frontend/images/webp/koin1.webp') }}" class="coin1" alt="koin1" />
                 <img src="{{ asset('frontend/images/webp/koin2.webp') }}" class="coin2" alt="koin1" />
                 <div class="form">
@@ -85,24 +85,18 @@
           </div>
         </div>
 
-      </section>
 
-
-      <!-- ============================================-->
-      <!-- <section> Result ============================-->
-      <section class="bg-100 py-7 section-has-bg" style="background-image: url({{ asset('frontend/images/webp/background1.webp') }});" id="users">
-
-        <div class="container-lg">
+        <div class="container-lg py-7" id="users">
           <div class="row justify-content-center">
             <div class="col-md-12 col-lg-12 text-center mb-4">
               <h2 class="text-grey indosat_bold fs-title-total-partisipan">Angka Total Partisipan</h2>
-              <img class="mb-3" src="{{ asset('frontend/images/webp/generasi-anti-judol.webp') }}" alt="" width="80%" loading="lazy" /> 
+              <img class="mb-3" src="{{ asset('frontend/images/webp/generasi-anti-judol.webp') }}" alt="" width="70%" loading="lazy" /> 
             </div>
           </div>
           <div class="row justify-content-center text-white position-relative">
             <img src="{{ asset('frontend/images/webp/koin1.webp') }}" class="coin1" alt="koin1" />
             <img src="{{ asset('frontend/images/webp/koin2.webp') }}" class="coin2" alt="koin1" />
-            <div class="col-md-10 col-10 p-col-mobile-desktop">
+            <div class="col-sm-8 col-10 p-col-mobile-desktop">
               <div class="card h-60 bg-total-partisipan">
                 <div class="card-body d-flex flex-column justify-content-around mx-auto text-center">
                     <div class="my-3 my-sm-1 d-flex flex-row bd-highlight" id="totalSubmission">
@@ -125,7 +119,7 @@
       <!-- ============================================-->
       <!-- <section> Activity  ============================-->
 
-      <section class="bg-100 py-3 section-has-bg" style="background-image: url({{ asset('frontend/images/webp/background2.webp') }});">
+      <section class="bg-100 py-3 section-has-bg" style="background-image: url({{ asset('frontend/images/webp/background1.webp') }});">
 
         <div class="container-lg mt-2 py-7">
           <div class="row text-center justify-content-center text-white p-2">

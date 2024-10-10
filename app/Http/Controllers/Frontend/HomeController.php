@@ -14,7 +14,7 @@ class HomeController extends Controller
     public function index()
     {   
         $totalSubmission = Participant::all()->count();  
-        // $totalSubmission = 9999;
+        // $totalSubmission = 10000;
         $numbers = str_split((string)$totalSubmission);   
         return view('frontend.homepage', compact('numbers'));
     }
