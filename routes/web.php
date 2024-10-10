@@ -24,8 +24,6 @@ Route::prefix('admin')->middleware(['auth', 'verified'])->as('admin.')->group(fu
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
 
-
-
     Route::middleware(['isSuperAdmin'])->group(function () {
         Route::resource('/user', UserController::class)->names('user');
     });
@@ -35,6 +33,7 @@ Route::prefix('admin')->middleware(['auth', 'verified'])->as('admin.')->group(fu
 Route::controller(HomeController::class)->group(function () {
     Route::get('/', 'index')->name('home.index');
     Route::post('/submit', 'store')->name('submit');
+    Route::get('/result', 'result')->name('result');
 });
 
 require __DIR__ . '/auth.php';

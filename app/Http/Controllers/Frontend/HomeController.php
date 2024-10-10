@@ -66,4 +66,11 @@ class HomeController extends Controller
         }     
 
     }
+
+    public function result()
+    {   
+        $totalSubmission = Participant::all()->count();  
+        $numbers = str_split((string)$totalSubmission);   
+        return $numbers;
+    }
 }

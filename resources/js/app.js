@@ -100,7 +100,7 @@ $(document).ready(function() {
                 var i;
                 for (let i = 0; i < numbers.length; i++) {
                   text += `<img class="number px-1" src="../frontend/images/webp/`+numbers[i]+`.webp" alt="" loading="lazy" />`;
-                  console.log(text);
+                  // console.log(text);
                 }
 
                 totalSubmission.html(text);
@@ -155,6 +155,26 @@ function checkTime(i) {
 
 $(window).on("load", function () {
     startTime();
+});
+
+
+function refreshResult() {
+    // Send AJAX POST request
+    $.get('/result', function(numbers) {
+        var text = '';
+        var i;
+        for (let i = 0; i < numbers.length; i++) {
+          text += `<img class="number px-1" src="../frontend/images/webp/`+numbers[i]+`.webp" alt="" loading="lazy" />`;
+          // console.log(text);
+        }
+        totalSubmission.html(text);  
+    }).fail(function(xhr, status, error) {
+      console.error('Error:', error);   // Handle errors here
+    });
+}
+
+$(function () {
+    setInterval(refreshResult, 10000);
 });
 
 
