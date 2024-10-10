@@ -1,108 +1,97 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"><meta content="width=device-width, initial-scale=1" name="viewport"><title>PropTech Kenya Welcome Email</title><!-- Designed by https://github.com/kaytcat --><!-- Robot header image designed by Freepik.com --><style type="text/css">
-  @import url(https://fonts.googleapis.com/css?family=Nunito);
+<!-- Free to use, HTML email template designed & built by FullSphere. Learn more about us at www.fullsphere.co.uk -->
 
-  /* Take care of image borders and formatting */
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 
-  img {
-    max-width: 600px;
-    outline: none;
-    text-decoration: none;
-    -ms-interpolation-mode: bicubic;
-  }
-  html{
-    margin: 0;
-    padding:0;
-  }
+<head>
 
-  a {
-    text-decoration: none;
-    border: 0;
-    outline: none;
-    color: #bbbbbb;
-  }
+  <!--[if gte mso 9]>
+  <xml>
+    <o:OfficeDocumentSettings>
+      <o:AllowPNG/>
+      <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+  </xml>
+  <![endif]-->
 
-  a img {
-    border: none;
-  }
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="x-apple-disable-message-reformatting">
+  <!--[if !mso]><!-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--<![endif]-->
 
-  /* General styling */
+  <!-- Your title goes here -->
+  <title>Information Belle & Sebastian</title>
+  <!-- End title -->
 
-  td, h1, h2, h3  {
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: 400;
-  }
-
-
-  body {
-    -webkit-font-smoothing:antialiased;
-    -webkit-text-size-adjust:none;
-    width: 100%;
-    height: 100%;
-    color: #666;
-    background: #fff;
-    font-size: 21px;
-    height: 100vh;
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
-  }
-
-   table {
-    border-collapse: collapse !important;
-  }
-
-  .headline {
-    color: #444;
-    font-size: 20px;
-  }
-
- .force-full-width {
-  width: 100% !important;
- }
-
-
-  </style><style media="screen" type="text/css">
-      @media screen {
-        td, h1, h2, h3 {
-          font-family: 'Nunito', 'Helvetica Neue', 'Arial', 'sans-serif' !important;
-        }
-      }
-  </style><style media="only screen and (max-width: 480px)" type="text/css">
-    /* Mobile styles */
-    @media only screen and (max-width: 480px) {
-
-      table[class="w320"] {
-        width: 320px !important;
-      }
+  <!-- Start stylesheet -->
+  <style type="text/css">
+    a,
+    a[href],
+    a:hover,
+    a:link,
+    a:visited {
+      /* This is the link colour */
+      text-decoration: none !important;
+      color: #0000EE;
     }
+
+    .link {
+      text-decoration: underline !important;
+    }
+
+    p,
+    p:visited {
+      /* Fallback paragraph style */
+      font-size: 15px;
+      line-height: 24px;
+      font-family: 'Helvetica', Arial, sans-serif;
+      font-weight: 300;
+      text-decoration: none;
+      color: #000000;
+    }
+<h1 style="text-align:left">This is heading 1</h2>
+<h2 style="text-align:left">This is heading 2</h2>
+<h3 style="text-align:right">This is heading 3</h3>
+<h4 style="text-align:justify">This is heading 4</h4>
   </style>
-  <style type="text/css"></style>
-  
-  </head>
-  <body bgcolor="#fff" class="body" style="padding:20px; margin:0; display:block; background:#ffffff; -webkit-text-size-adjust:none">
-<table align="center" cellpadding="0" cellspacing="0" height="100%" width="100%">
-<tbody><tr>
-<td align="center" bgcolor="#fff" class="" valign="top" width="100%">
-<center class=""><table cellpadding="0" cellspacing="0" class="w320" style="margin: 0 auto;" width="600">
-<tbody><tr>
-<td align="center" class="" valign="top"><table cellpadding="0" cellspacing="0" style="margin: 0 auto;" width="100%">
-</table>
-<table bgcolor="#fff" cellpadding="0" cellspacing="0" class="" style="margin: 0 auto; width: 100%; margin-top: 100px;">
-<tbody style="margin-top: 15px;">
-  <tr class="">
-<td class="">
-<img alt="indosat" class="" height="155" src="http://localhost:8000/frontend/images/webp/generasi-anti-judol.webp>
-</td>
-</tr>
-<tr style="height: 20px;"><td></td></tr>
-<tr class="" style=""><td class="headline">Halo {{ $fullname }}</td></tr>
-<tr>
-<td>
-<table cellpadding="0" cellspacing="0" class="" style="margin: 0 auto;" width="100%"><tbody class=""><tr class="">
-<td class="" style="color:#444; font-weight: 400;"><br><br>
-Terima kasih telah melaporkan kegiatan judi online yang Anda temukan di dunia digital melalui platform kami. Dukungan Anda sangat berarti dalam upaya menciptakan lingkungan digital yang lebih aman dan bersih dari tindakan ilegal.
+  <!-- End stylesheet -->
+
+</head>
+
+<!-- You can change background colour here -->
+
+<body style="text-align: center; margin: 0; padding-top: 10px; padding-bottom: 10px; padding-left: 0; padding-right: 0; -webkit-text-size-adjust: 100%;background-color: #f2f4f6; color: #000000" align="center">
+
+  <!-- Start container for logo -->
+  <table align="center" style="text-align: center; vertical-align: top; width: 600px; max-width: 600px; background-color: #ffffff; padding-top:40px;" width="600">
+    <tbody>
+      <tr>
+        <td style="width: 596px; vertical-align: top; padding-left: 0; padding-right: 0; padding-top: 15px; padding-bottom: 15px;" width="596">
+
+          <!-- Your logo is here -->
+          <img style="text-align: center; color: #ffffff;" alt="Logo" src="https://i.imghippo.com/files/igd9F1728538040.png" align="center" width="500">
+
+
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- End container for logo -->
+
+
+  <!-- Start single column section -->
+  <table align="center" style="text-align: left; vertical-align: top; width: 600px; max-width: 600px; background-color: #ffffff;" width="600">
+    <tbody>
+      <tr>
+        <td style="width: 596px; vertical-align: top; padding-left: 30px; padding-right: 30px; padding-top: 30px; padding-bottom: 40px;" width="596">
+
+          <h1 style="font-size: 20px; line-height: 24px; font-family: 'Helvetica', Arial, sans-serif; font-weight: 600; text-decoration: none; color: #000000;">Halo {{ $fullname }}</h1>
+
+          <p style="font-size: 15px; line-height: 24px; font-family: 'Helvetica', Arial, sans-serif; font-weight: 400; text-decoration: none; color: #4D4D4F;">
+            
+            Terima kasih telah melaporkan kegiatan judi online yang Anda temukan di dunia digital melalui platform kami. Dukungan Anda sangat berarti dalam upaya menciptakan lingkungan digital yang lebih aman dan bersih dari tindakan ilegal.
 
 Kami mengajak Anda untuk terus menjadi bagian dari gerakan Generasi Anti Judol dengan selalu menyebarkan pesan positif dan mengingatkan orang-orang di sekitar kita tentang bahaya dan dampak negatif judi online. Bersama, kita bisa membangun masa depan yang lebih baik untuk generasi mendatang.
 
@@ -112,22 +101,18 @@ Sekali lagi, terima kasih atas partisipasi dan dukungan Anda.
 <br>
 <br>
 Salam,<br>
-Komunitas Generasi Anti Judol.<em>Landlord</em><br>
+Komunitas Generasi Anti Judol.<br>
+<em>Landlord</em><br>
+          </p>
 
-</td>
-</tr>
-</tbody></table>
-</td>
-</tr>
-<tr>
-</tr>
-</tbody>
-  
+
+        </td>
+      </tr>
+    </tbody>
   </table>
-</td>
-</tr>
-</tbody></table></center>
-</td>
-</tr>
-</tbody></table>
-</body></html>
+  <!-- End single column section -->
+
+
+</body>
+
+</html>

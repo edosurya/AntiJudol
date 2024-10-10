@@ -1,8 +1,8 @@
 @extends('layouts.frontend')
 
 @section('title', 'Homepage')
-@section('meta_title', 'Indosat')
-@section('meta_description','Indosat')
+@section('meta_title', 'Generasi Anti Judol')
+@section('meta_description','Generasi Anti Judol')
 
     @push('css-plugin')
         @vite(['resources/js/app.js'])
@@ -133,7 +133,7 @@
               <img class="img-fluid rounded-img mb-3" src="{{ asset('frontend/images/webp/img3.webp') }}" alt="" loading="lazy" />
             </div>
             <div class="col-12">
-              <p class="text-grey indosat_bold fs-desc-activity">Sosialisasi seru bersama pemuda tentang bahaya judi online! Edukasi interaktif ini diharapkan dapat meningkatkan kesadaran masyarakat untuk menjaga generasi muda dari dampak negatif judi.</p>
+              <p class="text-grey indosat_bold fs-desc-activity">Sosialisasi seru bersama pemuda tentang bahaya judi online! <span class="new-line"></span>Edukasi interaktif ini diharapkan dapat meningkatkan kesadaran masyarakat untuk menjaga generasi muda dari dampak negatif judi.</p>
             </div>
           </div>
 
