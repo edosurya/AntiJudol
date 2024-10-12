@@ -341,9 +341,27 @@ img.number {
 	width: 140px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1199px) {
 	img.number {
-		width: 60px;
+		width: 100px;
+	}
+}
+
+@media (max-width: 861px) {
+	img.number {
+		width: 90px;
+	}
+}
+
+@media (max-width: 780px) {
+	img.number {
+		width: 70px;
+	}
+}
+
+@media (max-width: 618px) {
+	img.number {
+		width: 50px;
 	}
 }
 
