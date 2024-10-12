@@ -89,7 +89,7 @@
         <div class="container-lg py-7" id="users">
           <div class="row justify-content-center">
             <div class="col-md-12 col-lg-12 text-center mb-4">
-              <h2 class="text-grey indosat_bold fs-title-total-partisipan">Angka Total Partisipan</h2>
+              <h2 class="text-grey indosat_bold fs-title-total-partisipan">Total Partisipan Gerakan</h2>
               <img class="mb-3" src="{{ asset('frontend/images/webp/generasi-anti-judol.webp') }}" alt="" width="70%" loading="lazy" /> 
             </div>
           </div>

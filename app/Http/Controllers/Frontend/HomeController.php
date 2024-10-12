@@ -15,7 +15,8 @@ class HomeController extends Controller
     {   
         $totalSubmission = Participant::all()->count();  
         // $totalSubmission = 10000;
-        $numbers = str_split((string)$totalSubmission);   
+        $numbers = str_pad($totalSubmission, 5, '0', STR_PAD_LEFT);  
+        $numbers = str_split((string)$numbers); 
         return view('frontend.homepage', compact('numbers'));
     }
 
@@ -56,8 +57,9 @@ class HomeController extends Controller
             
             Mail::to($request->email)->send(new ThankYouMail($register));
             $totalSubmission = Participant::all()->count();  
-            $numbers = str_split((string)$totalSubmission);
-            
+            $numbers = str_pad($totalSubmission, 5, '0', STR_PAD_LEFT);  
+            $numbers = str_split((string)$numbers);
+
             DB::commit();
             return response()->json(['success' => true, 'message' => 'Data berhasil disimpan', 'with_toastr' => false, 'numbers' => $numbers]);
         } catch (\Throwable $th) {
@@ -70,7 +72,8 @@ class HomeController extends Controller
     public function result()
     {   
         $totalSubmission = Participant::all()->count();  
-        $numbers = str_split((string)$totalSubmission);   
+        $numbers = str_pad($totalSubmission, 5, '0', STR_PAD_LEFT);  
+        $numbers = str_split((string)$numbers);  
         return $numbers;
     }
 }
