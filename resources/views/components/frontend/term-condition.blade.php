@@ -15,7 +15,7 @@
             <p>Selamat bergabung dalam Gerakan Generasi Anti Judi Online! Aturan ini kami buat untuk memudahkan kamu dalam melaporkan konten judi online. Setiap laporan yang kamu berikan sangat berarti bagi upaya kita dalam menciptakan ruang digital yang bersih dan sehat.</p>
         </div>
         <div  clas
-        s="fs-term-condition-modal mb-1">Cara Melaporkan</div>
+        s="fs-term-condition-modal mb-1">1. Cara Melaporkan</div>
         <ul>
             <li>Identitas Diri: Silakan cantumkan nama lengkap dan alamat email kamu yang aktif.</li>
             <li>Link Konten: Tempelkan tautan langsung ke konten judi online yang ingin kamu laporkan.</li>
@@ -23,7 +23,7 @@
         </ul>
 
 
-        <div  class="fs-term-condition-modal mb-1">Proses Pelaporan</div>
+        <div  class="fs-term-condition-modal mb-1">2. Proses Pelaporan</div>
         <ul>
             <li>Data Aman: Data yang kamu berikan akan kami simpan secara aman dan rahasia.</li>
             <li>Langsung ke Kominfo: Laporan kamu akan kami teruskan ke Kementerian Komunikasi dan Informatika (Kominfo) melalui platform aduankonten.id.</li>
