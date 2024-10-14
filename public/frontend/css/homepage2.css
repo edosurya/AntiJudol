@@ -107,6 +107,10 @@ section#first {
 	}
 }
 
+.bg-red {
+	background: #B7171D !important;
+}
+
 .text-pink {
 	color: #EC008C !important;
 }
@@ -373,4 +377,12 @@ img.number {
 	.card-body {
 		padding: 0px;
 	}
+}
+
+.modal-header {
+	display: block;
+}
+
+.text-btn-padding {
+	padding: 10px 40px;
 }
