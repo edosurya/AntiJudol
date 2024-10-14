@@ -26,7 +26,7 @@
         <div  class="fs-term-condition-modal mb-1">2. Proses Pelaporan</div>
         <ul>
             <li>Data Aman: Data yang kamu berikan akan kami simpan secara aman dan rahasia.</li>
-            <li>Langsung ke Kominfo: Laporan kamu akan kami teruskan ke Kementerian Komunikasi dan Informatika (Kominfo) melalui platform aduankonten.id.</li>
+            <li>Langsung ke Kominfo: Laporan kamu akan kami teruskan ke Kementerian Komunikasi dan Informatika (Kominfo) melalui platform <a href="https://aduankonten.id/" target="_blank">aduankonten.id. </a></li>
             <li>Konfirmasi: Kamu akan menerima email konfirmasi sebagai tanda terima laporan.</li>
             <li>Mari Bersama: Kami akan membagikan template Instagram Add Yours agar kamu dapat mengajak lebih banyak teman untuk ikut serta dalam gerakan ini.</li>
         </ul>
