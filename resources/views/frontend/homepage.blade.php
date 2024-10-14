@@ -120,7 +120,7 @@
 
       <!-- ============================================-->
       <!-- <section> Activity  ============================-->
-
+<!-- 
       <section class="bg-100 py-3 section-has-bg" style="background-image: url({{ asset('frontend/images/webp/background1.webp') }});">
 
         <div class="container-lg mt-2 py-7">
@@ -140,10 +140,8 @@
           </div>
 
         </div>
-        <!-- end of .container-->
 
-
-      </section>
+      </section> -->
 
       <!-- <section> close ============================-->
       <!-- ============================================-->
