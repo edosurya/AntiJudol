@@ -6,6 +6,7 @@
 
 // imports
 import './bootstrap.js';
+import $ from 'jquery';
 
 
 // set global variables
@@ -15,7 +16,7 @@ const fnErrorMessage = $('#fnErrorMessage');
 const mailErrorMessage = $('#mailErrorMessage');
 const urlErrorMessage = $('#urlErrorMessage');
 const totalSubmission = $('#totalSubmission');
-const thankyou = $('#thankyou');
+const thankyou = $('#btnthankyou');
 const time = $('#time');
 
 $(document).ready(function() {
@@ -91,7 +92,7 @@ $(document).ready(function() {
             success: function(response) {
                 // Display success message
                 // successMessage.show().text(response.message);
-                thankyou.showModal();
+                thankyou.click();
                 $('.dz-loading-div').fadeOut();
                 document.getElementById("theForm").style.webkitFilter = "";
                 $('#fullname').val('');
