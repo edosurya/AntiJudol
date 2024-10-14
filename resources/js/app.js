@@ -15,6 +15,7 @@ const fnErrorMessage = $('#fnErrorMessage');
 const mailErrorMessage = $('#mailErrorMessage');
 const urlErrorMessage = $('#urlErrorMessage');
 const totalSubmission = $('#totalSubmission');
+const thankyou = $('#thankyou');
 const time = $('#time');
 
 $(document).ready(function() {
@@ -89,7 +90,8 @@ $(document).ready(function() {
             },
             success: function(response) {
                 // Display success message
-                successMessage.show().text(response.message);
+                // successMessage.show().text(response.message);
+                thankyou.showModal();
                 $('.dz-loading-div').fadeOut();
                 document.getElementById("theForm").style.webkitFilter = "";
                 $('#fullname').val('');

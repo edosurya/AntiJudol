@@ -30,6 +30,7 @@
                   <p class="text-red indosat_bold mt-4">Laporkan aktivitas Judol dengan mudah,<span class="new-line"></span> bersama kita bisa menghentikan <span class="new-line"></span> dampak negatif judi online!</p>
                   </div>
                   <button type="button" class="btn bg-red text-white mb-3 text-btn-padding indosat_bold" data-bs-toggle="modal" data-bs-target="#tnc"> Aturan Pelaporan
+                  <button type="button" class="btn bg-red text-white mb-3 text-btn-padding indosat_bold" data-bs-toggle="modal" data-bs-target="#thankyou"> Thank You
                   </button>
            
               </div>

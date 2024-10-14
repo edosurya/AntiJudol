@@ -381,6 +381,7 @@ img.number {
 
 .modal-header {
 	display: block;
+	border-bottom: none;
 }
 
 .text-btn-padding {

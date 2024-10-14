@@ -46,3 +46,25 @@
     </div>
   </div>
 </div>
+
+
+<!-- PUBLIC -->
+<div class="modal" id="thankyou">
+  <div class="modal-dialog modal-md modal-dialog-scrollable d-flex align-items-center justify-content-center">
+    <div class="modal-content">
+
+        <div class="modal-header bg-red">
+            <div class="text-center">
+                <h2 class="text-white indosat_bold"> KAMU BAGIAN<br/>#GENERASIANTIJUDOL</h2>
+            </div>
+        </div>
+
+        <div class="text-white px-lg-5 px-sm-2 modal-body text-center bg-black">
+            <div class="rounded-1 mb-1 indosat_bold">
+                <p>Terima kasih sudah melapor! Ayo, laporkan lebih banyak link Judi Online dan ajak sebanyak banyaknya para generasi muda menjadi #GenerasiAntiJudol</p>
+            </div>
+        </div>
+
+    </div>
+  </div>
+</div>
