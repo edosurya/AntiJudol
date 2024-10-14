@@ -42,10 +42,18 @@ class HomeController extends Controller
 
             $data_exist = Participant::where('email', $request->email)->where('link', $request->link)->get();
             $count_data_exist = $data_exist->count();
-        
+
             if($count_data_exist > 0) {
                 return response()->json('Email dan link sudah terdaftar', 404); 
             }
+
+            $tooManyEmail = Participant::where('email', $request->email)->get();
+            $count_email_exist = $tooManyEmail->count();
+
+            if($count_email_exist > 5) {
+                return response()->json('Email ini telah digunakan beberapa kali sebelumnya.', 404); 
+            }        
+
 
             DB::beginTransaction();
             $register = Participant::create([
@@ -55,7 +63,7 @@ class HomeController extends Controller
             ]);
 
             
-            // Mail::to($request->email)->send(new ThankYouMail($register));
+            Mail::to($request->email)->send(new ThankYouMail($register));
             $totalSubmission = Participant::all()->count();  
             $numbers = str_pad($totalSubmission, 5, '0', STR_PAD_LEFT);  
             $numbers = str_split((string)$numbers);
