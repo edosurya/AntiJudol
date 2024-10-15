@@ -40,11 +40,18 @@ class HomeController extends Controller
 
             ]);
 
-            $data_exist = Participant::where('email', $request->email)->where('link', $request->link)->get();
-            $count_data_exist = $data_exist->count();
+            // $data_exist = Participant::where('email', $request->email)->where('link', $request->link)->get();
+            // $count_data_exist = $data_exist->count();
 
-            if($count_data_exist > 0) {
-                return response()->json('Email dan link sudah terdaftar', 404); 
+            // if($count_data_exist > 0) {
+            //     return response()->json('Email dan link sudah terdaftar', 404); 
+            // }
+
+            $exist_link = Participant::where('link', $request->link)->get();
+            $count_exist_link = $exist_link->count();
+
+            if($count_exist_link > 0) {
+                return response()->json('Link ini sudah ada dalam database.', 404); 
             }
 
             $tooManyEmail = Participant::where('email', $request->email)->get();
