@@ -79,7 +79,8 @@ class HomeController extends Controller
             return response()->json(['success' => true, 'message' => 'Data berhasil disimpan', 'with_toastr' => false, 'numbers' => $numbers]);
         } catch (\Throwable $th) {
             DB::rollBack();
-            return response()->json($th->getMessage(), 404); 
+            Log::info(json_encode($th->getMessage()));
+            return response()->json('Terjadi masalah. Mohon coba beberapa saat lagi.', 404); 
         }     
 
     }
