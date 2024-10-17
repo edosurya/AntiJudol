@@ -61,7 +61,6 @@ class HomeController extends Controller
                 return response()->json('Email ini telah digunakan beberapa kali sebelumnya.', 404); 
             }        
 
-
             DB::beginTransaction();
             $register = Participant::create([
                 'fullname' => $request->fullname,
