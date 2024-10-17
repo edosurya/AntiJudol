@@ -69,13 +69,13 @@ class HomeController extends Controller
                 'link' => $request->link,
             ]);
 
-            
-            Mail::to($request->email)->send(new ThankYouMail($register));
             $totalSubmission = Participant::all()->count();  
             $numbers = str_pad($totalSubmission, 5, '0', STR_PAD_LEFT);  
             $numbers = str_split((string)$numbers);
 
             DB::commit();
+            Mail::to($request->email)->send(new ThankYouMail($register));
+
             return response()->json(['success' => true, 'message' => 'Data berhasil disimpan', 'with_toastr' => false, 'numbers' => $numbers]);
         } catch (\Throwable $th) {
             DB::rollBack();
