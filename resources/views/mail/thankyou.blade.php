@@ -67,13 +67,13 @@
         <td style="width: 288px;vertical-align: top; padding-left: 0; padding-right: 0; padding-top: 15px; padding-bottom: 15px;">
 
           <!-- Your logo is here -->
-          <img style="text-align: center; color: #ffffff;" alt="Logo" src="{{ asset('frontend/images/webp/kominfo.webp') }}" align="center" width="50">
+          <img style="text-align: center; color: #ffffff;" alt="Logo" src="{{ asset('frontend/images/kominfo.png') }}" align="center" width="50">
 
         </td>
         <td style="width: 288px;vertical-align: top; padding-left: 0; padding-right: 0; padding-top: 15px; padding-bottom: 15px;">
 
           <!-- Your logo is here -->
-          <img style="text-align: center; color: #ffffff;" alt="Logo" src="{{ asset('frontend/images/webp/IOH-logo.webp') }}" align="center" width="120">
+          <img style="text-align: center; color: #ffffff;" alt="Logo" src="{{ asset('frontend/images/IOH-logo.png') }}" align="center" width="120">
 
         </td>
       </tr>
@@ -87,7 +87,7 @@
       <tr>
         <td style="width: 596px; vertical-align: top; padding-left: 0; padding-right: 0; padding-top: 15px; padding-bottom: 15px;" width="596">
           <!-- Your logo is here -->
-          <img style="text-align: center; color: #ffffff;" alt="Logo" src="{{ asset('frontend/images/webp/generasi-anti-judol.webp') }}" align="center" width="500">
+          <img style="text-align: center; color: #ffffff;" alt="Logo" src="{{ asset('frontend/images/generasi-anti-judol.png') }}" align="center" width="500">
 
 
         </td>
