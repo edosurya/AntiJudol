@@ -384,6 +384,10 @@ img.number {
 	border-bottom: none;
 }
 
+.modal-footer {
+	border-top: none;
+}
+
 .text-btn-padding {
 	padding: 10px 40px;
 }

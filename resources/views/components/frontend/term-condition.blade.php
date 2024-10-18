@@ -65,6 +65,11 @@
             </div>
         </div>
 
+      <!-- Modal footer -->
+      <div class="modal-footer justify-content-center text-center bg-red">
+        <button type="button" class="btn rounded-3 text-black indosat_bold btn-register text-btn-padding bg-white" data-bs-dismiss="modal">Tutup</button>
+      </div>
+
     </div>
   </div>
 </div>
