@@ -28,6 +28,12 @@
                         <span>Participant</span>
                     </a>
                 </li>
+                <li>
+                    <a href="{{ route('admin.hashtag.index') }}" class="waves-effect">
+                        <i class="mdi mdi-texture"></i>
+                        <span>Hashtag</span>
+                    </a>
+                </li>
             </ul>
         </div>
         <!-- Sidebar -->

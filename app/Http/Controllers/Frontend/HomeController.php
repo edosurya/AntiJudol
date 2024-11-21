@@ -8,6 +8,7 @@ use App\Models\Participant;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\ThankYouMail;
+use App\Models\Share;
 
 class HomeController extends Controller
 {
@@ -90,5 +91,21 @@ class HomeController extends Controller
         $numbers = str_pad($totalSubmission, 5, '0', STR_PAD_LEFT);  
         $numbers = str_split((string)$numbers);  
         return $numbers;
+    }
+
+    public function share(Request $request)
+    {
+
+        try {
+            $channel = Share::TYPE[$request->channel];
+            $data = [
+                'channel' => $request->channel,
+                'ip_address' => request()->ip()
+            ];
+            Share::create($data);
+            return response()->json(['success' => true, 'message' => 'Successfully']);
+        } catch (\Throwable $th) {
+            return response()->json(['success' => false, 'message' => 'Error']);
+        }
     }
 }

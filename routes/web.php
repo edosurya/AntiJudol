@@ -12,6 +12,7 @@ use App\Http\Controllers\Admin\ProfileController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\ParticipantController;
 use App\Http\Controllers\Admin\ParticipantExportController;
+use App\Http\Controllers\Admin\HashtagController;
 
 
 
@@ -27,6 +28,10 @@ Route::prefix('admin')->middleware(['auth', 'verified'])->as('admin.')->group(fu
     Route::middleware(['isSuperAdmin'])->group(function () {
         Route::resource('/user', UserController::class)->names('user');
     });
+
+    Route::get('/hashtag', [HashtagController::class, 'index'])->name('hashtag.index');
+    Route::post('/hashtag', [HashtagController::class, 'store'])->name('hashtag.store');
+
 });
 
 
@@ -34,6 +39,7 @@ Route::controller(HomeController::class)->group(function () {
     Route::get('/', 'index')->name('home.index');
     Route::post('/submit', 'store')->name('submit');
     Route::get('/result', 'result')->name('result');
+    Route::post('/share', 'share')->name('share');
 });
 
 require __DIR__ . '/auth.php';

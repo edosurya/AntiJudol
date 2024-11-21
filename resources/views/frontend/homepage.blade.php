@@ -28,6 +28,15 @@
                   </p>
                   <p class="text-red indosat_bold mt-4">Laporkan aktivitas Judol dengan mudah,<span class="new-line"></span> bersama kita bisa menghentikan <span class="new-line"></span> dampak negatif judi online!</p>
                   </div>
+                  <div class="d-flex flex-row gap-3 mb-3">
+                    <a class="icon" href="#" data-bs-toggle="modal" data-bs-target="#facebook"><img src="{{ asset('frontend/images/fb.png') }}" alt="" width="50" /></a>
+                    <a class="icon" href="#" data-bs-toggle="modal" data-bs-target="#x"><img src="{{ asset('frontend/images/x.png') }}" alt="" width="50" /></a>
+                    <a class="icon" href="#" data-bs-toggle="modal" data-bs-target="#instagram"><img src="{{ asset('frontend/images/ig.png') }}" alt="" width="50" /></a>
+
+                  </div>
+
+
+
                   <button type="button" class="btn bg-red text-white mb-3 text-btn-padding indosat_bold" data-bs-toggle="modal" data-bs-target="#tnc"> Aturan Pelaporan
                   <button id="btnthankyou" type="button" class="btn bg-red text-white mb-3 text-btn-padding indosat_bold" data-bs-toggle="modal" data-bs-target="#thankyou" style="display: none;"> Thank You
                   </button>
@@ -158,6 +167,7 @@
     </script>
 
     @include('components.frontend.term-condition')
+    @include('components.frontend.share')
 
 @endsection
 
@@ -169,4 +179,38 @@
 @endpush
 
 @push('script')
+
+<script type="text/javascript">
+    
+    function sosmedShare(channel) {
+
+        let formData = {
+            channel: channel,
+            _token: $('meta[name="csrf-token"]').attr('content') // Get CSRF token
+        };
+
+        const url = 'https://generasiantijudol.id/';
+
+        // Perform AJAX POST request
+        $.ajax({
+            url: "{{ route('share') }}", // Laravel route URL
+            method: 'POST',
+            data: formData,
+            success: function (response) {
+                console.log(response);
+                if(channel == 1) {
+                    window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(url),'sharer','toolbar=0,status=0,width=626,height=436');
+                    return false;
+                } else if(channel == 2) {
+                    window.open('https://twitter.com/intent/tweet?text=Cek%20this%20out%20https%3A//generasiantijudol.id/');
+                    return false
+                }
+            },
+            error: function (xhr, status, error) {
+                console.error('Error:', xhr.responseText);
+            }
+        });
+    }
+
+</script>
 @endpush
