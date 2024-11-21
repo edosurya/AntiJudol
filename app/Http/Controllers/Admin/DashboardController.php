@@ -10,6 +10,8 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
 use App\Models\Participant;
+use App\Models\Hashtag;
+use App\Models\Share;
 
 class DashboardController extends Controller
 {
@@ -18,9 +20,13 @@ class DashboardController extends Controller
      */
     public function index(): View
     {
-        $participant_total = Participant::all()->count();
+        $participants = Participant::all()->count();
+        $hashtags = Hashtag::select('total')->latest()->first();
+        $shares = Share::all()->count();
+        $support_total = $hashtags->total + $shares;
+        $participant_total = $participants + $support_total;
         
-        return view('admin.dashboard.index',compact('participant_total'));
+        return view('admin.dashboard.index',compact('participant_total', 'support_total', 'participants', 'hashtags', 'shares'));
        
     }
 

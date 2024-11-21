@@ -22,7 +22,47 @@
             <h3>Hello, Admin</h3>
         </div>
     </div>
-     <div class="col-xl-12 col-sm-12">
+     <div class="col-xl-4 col-sm-4">
+        <div class="card mini-stat bg-warning">
+            <div class="card-body mini-stat-img">
+                <div class="text-white">
+                    <h6 class="text-uppercase mb-3 font-size-16 text-white">Participant</h6>
+                    <h2 class="mb-4 text-white">{{ $participants }}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="col-xl-4 col-sm-4">
+        <div class="card mini-stat bg-warning">
+            <div class="card-body mini-stat-img">
+                <div class="text-white">
+                    <h6 class="text-uppercase mb-3 font-size-16 text-white">Hashtag</h6>
+                    <h2 class="mb-4 text-white">{{ $hashtags->total }}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="col-xl-4 col-sm-4">
+        <div class="card mini-stat bg-warning">
+            <div class="card-body mini-stat-img">
+                <div class="text-white">
+                    <h6 class="text-uppercase mb-3 font-size-16 text-white">Share</h6>
+                    <h2 class="mb-4 text-white">{{ $shares }}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="col-xl-6 col-sm-6">
+        <div class="card mini-stat bg-secondary">
+            <div class="card-body mini-stat-img">
+                <div class="text-white">
+                    <h6 class="text-uppercase mb-3 font-size-16 text-white">Total Support</h6>
+                    <h2 class="mb-4 text-white">{{ $support_total }}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="col-xl-6 col-sm-6">
         <div class="card mini-stat bg-secondary">
             <div class="card-body mini-stat-img">
                 <div class="text-white">
@@ -32,6 +72,8 @@
             </div>
         </div>
     </div>
+
+
 </div>
 <!-- end row -->
 
