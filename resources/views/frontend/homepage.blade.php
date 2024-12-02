@@ -101,7 +101,7 @@
         </div>
 
 
-        <div class="container-lg py-7" id="users">
+        <div class="container-lg py-3 py-md-7" id="users">
           <div class="row justify-content-center">
             <div class="col-md-12 col-lg-12 text-center mb-4">
               <h2 class="text-grey indosat_bold fs-title-total-partisipan">Total Partisipan Gerakan</h2>
@@ -126,9 +126,61 @@
           </div>
          </div>
 
+        <div id="lakung" class="container-lg py-3">
+            <div class="row">
+                <div class="col-md-6 mb-5 mb-md-0">
+                  <div class="justify-content-center">
+                    <div class="col-md-12 col-lg-12 text-center mb-4">
+                      <h2 class="text-grey indosat_bold fs-title-total-lakung">Total Laporan</h2>
+                    </div>
+                  </div>
+                  <div class="row justify-content-center text-white position-relative">
+                    <img src="{{ asset('frontend/images/webp/koin1.webp') }}" class="coin1" alt="koin1" />
+                    <img src="{{ asset('frontend/images/webp/koin2.webp') }}" class="coin2" alt="koin1" />
+                    <div class="col-sm-8 col-10 p-col-mobile-desktop">
+                      <div class="card h-60 bg-total-lakung">
+                        <div class="card-body d-flex flex-column justify-content-around mx-auto text-center">
+                            <div class="my-3 my-sm-1 d-flex flex-row bd-highlight" id="totalSubmission">
+                              @foreach($t_lapor as $l)
+                                <img class="number px-1" src="{{ asset('frontend/images/webp/'.$l.'.webp') }}" alt="" loading="lazy" />
+                              @endforeach
+                            </div>
+                        </div>
+                      </div>
+                      <!-- <p class="text-white fs-3 text-center mt-3" id="time"></p> -->
+                    </div>
+                  </div>
+                </div>
 
-         <div id="flockler-embed-19343bb7fbb007aab0f2329c6ae03ff7"></div>
-            <script src="https://plugins.flockler.com/embed/19343b52fa00c477565a54d5fd8eb5d7/19343bb7fbb007aab0f2329c6ae03ff7" async></script>
+                <div class="col-md-6 ">
+                  <div class="justify-content-center">
+                    <div class="col-md-12 col-lg-12 text-center mb-4">
+                      <h2 class="text-grey indosat_bold fs-title-total-lakung">Total Dukungan</h2>
+                    </div>
+                  </div>
+                  <div class="row justify-content-center text-white position-relative">
+                    <img src="{{ asset('frontend/images/webp/koin1.webp') }}" class="coin1" alt="koin1" />
+                    <img src="{{ asset('frontend/images/webp/koin2.webp') }}" class="coin2" alt="koin1" />
+                    <div class="col-sm-8 col-10 p-col-mobile-desktop">
+                      <div class="card h-60 bg-total-lakung">
+                        <div class="card-body d-flex flex-column justify-content-around mx-auto text-center">
+                            <div class="my-3 my-sm-1 d-flex flex-row bd-highlight" id="totalSubmission">
+                              @foreach($t_dukung as $d)
+                                <img class="number px-1" src="{{ asset('frontend/images/webp/'.$d.'.webp') }}" alt="" loading="lazy" />
+                              @endforeach
+                            </div>
+                        </div>
+                      </div>
+                      <!-- <p class="text-white fs-3 text-center mt-3" id="time"></p> -->
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+        </div>
+
+         <!-- <div id="flockler-embed-19343bb7fbb007aab0f2329c6ae03ff7"></div> -->
+            <!-- <script src="https://plugins.flockler.com/embed/19343b52fa00c477565a54d5fd8eb5d7/19343bb7fbb007aab0f2329c6ae03ff7" async></script> -->
 
       </section>
 

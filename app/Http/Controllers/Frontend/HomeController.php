@@ -9,16 +9,26 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\ThankYouMail;
 use App\Models\Share;
+use App\Models\Hashtag;
 
 class HomeController extends Controller
 {
     public function index()
     {   
-        $totalSubmission = Participant::all()->count();  
+        $participants = Participant::all()->count();  
         // $totalSubmission = 10000;
-        $numbers = str_pad($totalSubmission, 5, '0', STR_PAD_LEFT);  
-        $numbers = str_split((string)$numbers); 
-        return view('frontend.homepage', compact('numbers'));
+
+        $hashtags = Hashtag::select('total')->latest()->first();
+        $shares = Share::all()->count();
+        $support_total = $hashtags->total + $shares;
+        $participant_total = $participants + $support_total;
+
+        $numbers = $this->formatNumber($participants);
+        $t_lapor = $this->formatNumber($participant_total);
+        $t_dukung = $this->formatNumber($support_total);
+
+
+        return view('frontend.homepage', compact('numbers','t_lapor', 't_dukung'));
     }
 
     /**
@@ -69,20 +79,34 @@ class HomeController extends Controller
                 'link' => $request->link,
             ]);
 
-            $totalSubmission = Participant::all()->count();  
-            $numbers = str_pad($totalSubmission, 5, '0', STR_PAD_LEFT);  
-            $numbers = str_split((string)$numbers);
+            $participants = Participant::all()->count();  
+            $hashtags = Hashtag::select('total')->latest()->first();
+            $shares = Share::all()->count();
+            $support_total = $hashtags->total + $shares;
+            $participant_total = $participants + $support_total;
+
+            $numbers = $this->formatNumber($participants);
+            $t_lapor = $this->formatNumber($participant_total);
+            $t_dukung = $this->formatNumber($support_total);
 
             DB::commit();
             Mail::to($request->email)->send(new ThankYouMail($register));
 
-            return response()->json(['success' => true, 'message' => 'Data berhasil disimpan', 'with_toastr' => false, 'numbers' => $numbers]);
+            return response()->json(['success' => true, 'message' => 'Data berhasil disimpan', 'with_toastr' => false, 'numbers' => $numbers, 't_lapor' => $t_lapor, 't_dukung' => $t_dukung]);
         } catch (\Throwable $th) {
             DB::rollBack();
             Log::info(json_encode($th->getMessage()));
             return response()->json('Terjadi masalah. Mohon coba beberapa saat lagi.', 404); 
         }     
 
+    }
+
+    public function formatNumber($number)
+    {
+        $newNumber = str_pad($number, 5, '0', STR_PAD_LEFT);  
+        $newNumber = str_split((string)$newNumber);
+
+        return $newNumber;
     }
 
     public function result()
