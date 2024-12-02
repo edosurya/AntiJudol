@@ -10,30 +10,40 @@
           </div>
       </div>
 
-    <div class="text-black px-lg-5 px-sm-2 modal-body bg-white">
+    <div class="text-black px-lg-5 px-sm-2 modal-body bg-white fs-term-condition-modal">
         <div class="rounded-1 mb-1">
-            <p>Selamat bergabung dalam Gerakan Generasi Anti Judi Online! Aturan ini kami buat untuk memudahkan kamu dalam melaporkan konten judi online. Setiap laporan yang kamu berikan sangat berarti bagi upaya kita dalam menciptakan ruang digital yang bersih dan sehat.</p>
+            <p>Selamat bergabung dalam Gerakan Generasi Anti Judi Online! Aturan ini kami buat untuk memudahkan kamu dalam melaporkan konten judi online. Setiap laporan dan konten yang disebarkan secara luas sangat berarti bagi upaya kita dalam menciptakan ruang digital yang bersih dan sehat.</p>
         </div>
-        <div  clas
-        s="fs-term-condition-modal mb-1">1. Cara Melaporkan</div>
+        <div  class="mb-1">1. Cara Melaporkan</div>
         <ul>
             <li>Identitas Diri: Silakan cantumkan nama lengkap dan alamat email kamu yang aktif.</li>
             <li>Link Konten: Tempelkan tautan langsung ke konten judi online yang ingin kamu laporkan.</li>
             <li>Kirim Laporan: Klik tombol "Kirim" untuk mengirimkan laporan kamu.</li>
+            <li>Bagikan “infografik”: klik ikon media sosial untuk membagikan infografik ke sosial media-mu.</li>
+            <small>*Infografik ini adalah visual konten ditujukan untuk melapor dan ajakan bertindak melawan judi online</small>
+
         </ul>
 
 
-        <div  class="fs-term-condition-modal mb-1">2. Proses Pelaporan</div>
+        <div  class="mb-1">2. Tunjukkan Partisipasimu!</div>
+        <ul>
+            <li>1 Link yang dilaporkan = 1 Partisipasi.</li>
+            <li>1 Share + #GenerasiAntiJudol di media sosial = 1 Dukungan.</li>
+            <li>Total Partisipasi = Submission + Dukungan.</li>
+        </ul>
+
+        <div  class="mb-1">3. Proses Pelaporan</div>
         <ul>
             <li>Data Aman: Data yang kamu berikan akan kami simpan secara aman dan rahasia.</li>
             <li>Langsung ke Kominfo: Laporan kamu akan kami teruskan ke Kementerian Komunikasi dan Informatika (Kominfo) melalui platform <a href="https://aduankonten.id/" target="_blank">aduankonten.id. </a></li>
             <li>Konfirmasi: Kamu akan menerima email konfirmasi sebagai tanda terima laporan.</li>
-            <li>Mari Bersama: Kami akan membagikan template Instagram Add Yours agar kamu dapat mengajak lebih banyak teman untuk ikut serta dalam gerakan ini.</li>
         </ul>
 
 
         <div class="rounded-1 mb-1">
-            <p>Terima kasih atas partisipasi aktif kamu. Mari bersama-sama kita lawan judi online!<br/>Salam, #GenerasiAntiJudol</p>
+            <p>Terima kasih atas partisipasi aktif kamu. Mari bersama-sama kita lawan judi online untuk melindungi generasi muda Indonesia!
+                <br>Bersama Kita Lawan Judol
+                <br/>Salam, #GenerasiAntiJudol</p>
         </div>
 
     </div>

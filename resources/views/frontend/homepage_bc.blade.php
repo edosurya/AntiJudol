@@ -24,12 +24,8 @@
               <div class="col-12 col-sm-7 mb-5 h-100">
                   <img class="mb-3" src="{{ asset('frontend/images/webp/generasi-anti-judol.webp') }}" alt="" width="100%" loading="lazy" /> 
                   <div class="fs-generasi-anti-judol mt-3">
-                  <p class="text-grey indosat_medium"> Gerakan Generas Anti Judi Online hadir sebagal platform untuk melaporkan dan memberantas aktivitas judi online yang merusak generasi bangsa.
+                  <p class="text-grey indosat_medium"> Generasi Anti Judi Online hadir sebagai platform untuk melaporkan dan memberantas aktivitas judi online yang merusak generasi bangsa. <span class="new-line"></span>Melalui situs ini, kami mengajak semua lapisan masyarakat untuk berpartisipasi aktif dalam menjaga masa depan yang lebih bersih dan aman bagi anak-anak muda Indonesia.
                   </p>
-                  <p class="indosat_bold"> "Sampal Saat ini sudah sebanyak 8,8 juta masyarakat indonesia tercatat bermain judi Online, dan 80% diantaranya adalah anak-anak muda yang merupalan generasi harapan Indonesia. (Berdasarkan pernyataan dari Menko Polkam Budi Gunawan, Nov 2024). Dan didukung dengan pernyataan Menteri Komunikasi dan Digital RI Meutya Hafid mengatakan ada 80 ribu anak di bawah usia 10 tahun yang terpapar judi online."</p>
-
-                  <p class="text-grey indosat_medium">Dengan itu, melalui gerakan ini kami mengajak semua lapisan masyarakat untuk berpartisipasi aktif dalam menjaga masa depan bebas judi online dan aman bagi anak-anak muda indonesia.</p>
-
                   <p class="text-red indosat_bold mt-4">Laporkan aktivitas Judol dengan mudah,<span class="new-line"></span> bersama kita bisa menghentikan <span class="new-line"></span> dampak negatif judi online!</p>
                   </div>
                   <div class="d-flex flex-row gap-3 mb-3">
@@ -41,7 +37,7 @@
 
 
 
-                  <button type="button" class="btn bg-red text-white mb-3 text-btn-padding indosat_bold rounded-pill" data-bs-toggle="modal" data-bs-target="#tnc"> Aturan Pelaporan
+                  <button type="button" class="btn bg-red text-white mb-3 text-btn-padding indosat_bold" data-bs-toggle="modal" data-bs-target="#tnc"> Aturan Pelaporan
                   <button id="btnthankyou" type="button" class="btn bg-red text-white mb-3 text-btn-padding indosat_bold" data-bs-toggle="modal" data-bs-target="#thankyou" style="display: none;"> Thank You
                   </button>
            
