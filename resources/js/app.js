@@ -19,6 +19,7 @@ const totalSubmission = $('#totalSubmission');
 const t_lapor = $('#t_lapor');
 const t_dukung = $('#t_dukung');
 const thankyou = $('#btnthankyou');
+const btnShare = $('#btnshare');
 const time = $('#time');
 
 $(document).ready(function() {
@@ -92,10 +93,10 @@ $(document).ready(function() {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
             },
             success: function(response) {
-                console.log(response);
+                // console.log(response);
                 // Display success message
                 // successMessage.show().text(response.message);
-                thankyou.click();
+                btnShare.click();
                 $('.dz-loading-div').fadeOut();
                 document.getElementById("theForm").style.webkitFilter = "";
                 $('#fullname').val('');
