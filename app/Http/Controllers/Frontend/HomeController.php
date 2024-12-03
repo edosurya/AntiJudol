@@ -90,7 +90,7 @@ class HomeController extends Controller
             $t_dukung = $this->formatNumber($support_total);
 
             DB::commit();
-            Mail::to($request->email)->send(new ThankYouMail($register));
+            // Mail::to($request->email)->send(new ThankYouMail($register));
 
             return response()->json(['success' => true, 'message' => 'Data berhasil disimpan', 'with_toastr' => false, 'numbers' => $numbers, 't_lapor' => $t_lapor, 't_dukung' => $t_dukung]);
         } catch (\Throwable $th) {
@@ -101,20 +101,21 @@ class HomeController extends Controller
 
     }
 
-    public function formatNumber($number)
-    {
-        $newNumber = str_pad($number, 5, '0', STR_PAD_LEFT);  
-        $newNumber = str_split((string)$newNumber);
-
-        return $newNumber;
-    }
-
     public function result()
     {   
-        $totalSubmission = Participant::all()->count();  
-        $numbers = str_pad($totalSubmission, 5, '0', STR_PAD_LEFT);  
-        $numbers = str_split((string)$numbers);  
-        return $numbers;
+        $participants = Participant::all()->count();  
+        $hashtags = Hashtag::select('total')->latest()->first();
+        $shares = Share::all()->count();
+        $support_total = $hashtags->total + $shares;
+        $participant_total = $participants + $support_total;
+
+        $numbers = $this->formatNumber($participants);
+        $t_lapor = $this->formatNumber($participant_total);
+        $t_dukung = $this->formatNumber($support_total);
+
+        return response()->json(['numbers' => $numbers, 't_lapor' => $t_lapor, 't_dukung' => $t_dukung]);
+
+        // return $numbers;
     }
 
     public function share(Request $request)
@@ -131,5 +132,13 @@ class HomeController extends Controller
         } catch (\Throwable $th) {
             return response()->json(['success' => false, 'message' => 'Error']);
         }
+    }
+
+    public function formatNumber($number)
+    {
+        $newNumber = str_pad($number, 5, '0', STR_PAD_LEFT);  
+        $newNumber = str_split((string)$newNumber);
+
+        return $newNumber;
     }
 }

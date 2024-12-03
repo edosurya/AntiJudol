@@ -16,6 +16,8 @@ const fnErrorMessage = $('#fnErrorMessage');
 const mailErrorMessage = $('#mailErrorMessage');
 const urlErrorMessage = $('#urlErrorMessage');
 const totalSubmission = $('#totalSubmission');
+const t_lapor = $('#t_lapor');
+const t_dukung = $('#t_dukung');
 const thankyou = $('#btnthankyou');
 const time = $('#time');
 
@@ -90,6 +92,7 @@ $(document).ready(function() {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
             },
             success: function(response) {
+                console.log(response);
                 // Display success message
                 // successMessage.show().text(response.message);
                 thankyou.click();
@@ -106,7 +109,27 @@ $(document).ready(function() {
                   // console.log(text);
                 }
 
+                var v_t_lapor = response.t_lapor;
+                var c_t_lapor = '';
+                var j;
+
+                for (let j = 0; j < v_t_lapor.length; j++) {
+                  c_t_lapor += `<img class="number px-1" src="../frontend/images/webp/`+v_t_lapor[j]+`.webp" alt="" loading="lazy" />`;
+                  // console.log(c_t_lapor);
+                }
+
+                var v_t_dukung = response.t_dukung;
+                var c_t_dukung = '';
+                var k;
+
+                for (let k = 0; k < v_t_dukung.length; k++) {
+                  c_t_dukung += `<img class="number px-1" src="../frontend/images/webp/`+v_t_dukung[k]+`.webp" alt="" loading="lazy" />`;
+                }
+
                 totalSubmission.html(text);
+                t_lapor.html(c_t_lapor);
+                t_dukung.html(c_t_dukung);
+
             },
             error: function(xhr) {
                 // Handle server-side validation errors
@@ -173,14 +196,35 @@ $(window).on("load", function () {
 
 function refreshResult() {
     // Send AJAX POST request
-    $.get('/result', function(numbers) {
+    $.get('/result', function(response) {
+        var numbers = response.numbers;
         var text = '';
         var i;
         for (let i = 0; i < numbers.length; i++) {
           text += `<img class="number px-1" src="../frontend/images/webp/`+numbers[i]+`.webp" alt="" loading="lazy" />`;
           // console.log(text);
         }
-        totalSubmission.html(text);  
+
+        var v_t_lapor = response.t_lapor;
+        var c_t_lapor = '';
+        var j;
+
+        for (let j = 0; j < v_t_lapor.length; j++) {
+          c_t_lapor += `<img class="number px-1" src="../frontend/images/webp/`+v_t_lapor[j]+`.webp" alt="" loading="lazy" />`;
+          // console.log(c_t_lapor);
+        }
+
+        var v_t_dukung = response.t_dukung;
+        var c_t_dukung = '';
+        var k;
+
+        for (let k = 0; k < v_t_dukung.length; k++) {
+          c_t_dukung += `<img class="number px-1" src="../frontend/images/webp/`+v_t_dukung[k]+`.webp" alt="" loading="lazy" />`;
+        }
+
+        totalSubmission.html(text);
+        t_lapor.html(c_t_lapor);
+        t_dukung.html(c_t_dukung); 
     }).fail(function(xhr, status, error) {
       console.error('Error:', error);   // Handle errors here
     });

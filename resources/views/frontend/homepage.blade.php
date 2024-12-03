@@ -32,7 +32,7 @@
 
                   <p class="text-red indosat_bold mt-4">Laporkan aktivitas Judol dengan mudah,<span class="new-line"></span> bersama kita bisa menghentikan <span class="new-line"></span> dampak negatif judi online!</p>
                   </div>
-                  
+
                 <div class="d-flex flex-row gap-3">
                   <button type="button" class="btn bg-red text-white mb-3 text-btn-padding indosat_bold rounded-pill px-4 mr" data-bs-toggle="modal" data-bs-target="#tnc"> Aturan Pelaporan </button>
                   <button type="button" class="btn bg-red text-white mb-3 text-btn-padding indosat_bold rounded-pill" data-bs-toggle="modal" data-bs-target="#share"> Share </button>
@@ -135,7 +135,7 @@
                     <div class="col-sm-8 col-10 p-col-mobile-desktop">
                       <div class="card h-60 bg-total-lakung">
                         <div class="card-body d-flex flex-column justify-content-around mx-auto text-center">
-                            <div class="my-3 my-sm-1 d-flex flex-row bd-highlight" id="totalSubmission">
+                            <div class="my-3 my-sm-1 d-flex flex-row bd-highlight" id="t_lapor">
                               @foreach($t_lapor as $l)
                                 <img class="number px-1" src="{{ asset('frontend/images/webp/'.$l.'.webp') }}" alt="" loading="lazy" />
                               @endforeach
@@ -159,7 +159,7 @@
                     <div class="col-sm-8 col-10 p-col-mobile-desktop">
                       <div class="card h-60 bg-total-lakung">
                         <div class="card-body d-flex flex-column justify-content-around mx-auto text-center">
-                            <div class="my-3 my-sm-1 d-flex flex-row bd-highlight" id="totalSubmission">
+                            <div class="my-3 my-sm-1 d-flex flex-row bd-highlight" id="t_dukung">
                               @foreach($t_dukung as $d)
                                 <img class="number px-1" src="{{ asset('frontend/images/webp/'.$d.'.webp') }}" alt="" loading="lazy" />
                               @endforeach
