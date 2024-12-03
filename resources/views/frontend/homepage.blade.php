@@ -32,18 +32,13 @@
 
                   <p class="text-red indosat_bold mt-4">Laporkan aktivitas Judol dengan mudah,<span class="new-line"></span> bersama kita bisa menghentikan <span class="new-line"></span> dampak negatif judi online!</p>
                   </div>
-                  <div class="d-flex flex-row gap-3 mb-3">
-                    <a class="icon" href="#" data-bs-toggle="modal" data-bs-target="#facebook"><img src="{{ asset('frontend/images/fb.png') }}" alt="" width="50" /></a>
-                    <a class="icon" href="#" data-bs-toggle="modal" data-bs-target="#x"><img src="{{ asset('frontend/images/x.png') }}" alt="" width="50" /></a>
-                    <a class="icon" href="#" data-bs-toggle="modal" data-bs-target="#instagram"><img src="{{ asset('frontend/images/ig.png') }}" alt="" width="50" /></a>
-
-                  </div>
-
-
-
-                  <button type="button" class="btn bg-red text-white mb-3 text-btn-padding indosat_bold rounded-pill" data-bs-toggle="modal" data-bs-target="#tnc"> Aturan Pelaporan
+                  
+                <div class="d-flex flex-row gap-3">
+                  <button type="button" class="btn bg-red text-white mb-3 text-btn-padding indosat_bold rounded-pill px-4 mr" data-bs-toggle="modal" data-bs-target="#tnc"> Aturan Pelaporan </button>
+                  <button type="button" class="btn bg-red text-white mb-3 text-btn-padding indosat_bold rounded-pill" data-bs-toggle="modal" data-bs-target="#share"> Share </button>
                   <button id="btnthankyou" type="button" class="btn bg-red text-white mb-3 text-btn-padding indosat_bold" data-bs-toggle="modal" data-bs-target="#thankyou" style="display: none;"> Thank You
                   </button>
+                </div>
            
               </div>
             
@@ -263,7 +258,10 @@
                     return false;
                 } else if(channel == 2) {
                     window.open('https://twitter.com/intent/tweet?text=Cek%20this%20out%20https%3A//generasiantijudol.id/');
-                    return false
+                    return false;
+                } else if(channel == 4) {
+                    window.open('https://wa.me/?text=Cek%20this%20out%20https%3A//generasiantijudol.id/');
+                    return false;
                 }
             },
             error: function (xhr, status, error) {

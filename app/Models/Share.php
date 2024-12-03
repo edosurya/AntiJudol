@@ -20,10 +20,12 @@ class Share extends Model
     const CHANNEL1   = 1;
     const CHANNEL2   = 2;
     const CHANNEL3   = 3;
+    const CHANNEL4   = 4;
 
     const TYPE = [
         self::CHANNEL1   => 'facebook',
         self::CHANNEL2   => 'x',
         self::CHANNEL3   => 'instagram',
+        self::CHANNEL4   => 'whatsapp',
     ];
 }

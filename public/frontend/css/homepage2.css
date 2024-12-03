@@ -111,6 +111,10 @@ section#first {
 	background: #B7171D !important;
 }
 
+.bg-grey {
+	background: #CFCFCF !important;
+}
+
 .text-pink {
 	color: #EC008C !important;
 }
