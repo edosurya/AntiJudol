@@ -37,7 +37,7 @@
             <div class="card-body mini-stat-img">
                 <div class="text-white">
                     <h6 class="text-uppercase mb-3 font-size-16 text-white">Hashtag</h6>
-                    <h2 class="mb-4 text-white">{{ $hashtags->total }}</h2>
+                    <h2 class="mb-4 text-white">{{ @$hashtags->total }}</h2>
                 </div>
             </div>
         </div>
