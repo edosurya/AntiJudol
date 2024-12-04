@@ -42,7 +42,7 @@
             <button type="button" class="btn-close btn-close-white p-3" aria-label="Close" data-bs-dismiss="modal"></button>
         </div>
         <div class="text-center mt-2">
-        <a href="#" class="btn bg-white text-black text-btn-padding indosat_bold rounded-pill px-4 mr" onclick="sosmedShare('3')"><img src="{{ asset('frontend/images/download-icon.png') }}" alt="" width="25" /> Unduh Hasil Di Sini </a>
+        <a href="{{ asset('frontend/images/download-icon.png') }}" class="btn bg-white text-black text-btn-padding indosat_bold rounded-pill px-4 mr" onclick="sosmedShare('3')" download="stories"><img src="{{ asset('frontend/images/download-icon.png') }}" alt="" width="25" download /> Unduh Hasil Di Sini </a>
         </div>
 
       <!-- Modal footer -->
