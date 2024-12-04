@@ -23,8 +23,8 @@ class DashboardController extends Controller
         $participants = Participant::all()->count();
         $hashtags = Hashtag::select('total')->latest()->first();
         $shares = Share::all()->count();
-        $support_total = $hashtags->total + $shares;
-        $participant_total = $participants + $support_total;
+        $support_total = @$hashtags->total + @$shares;
+        $participant_total = @$participants + @$support_total;
         
         return view('admin.dashboard.index',compact('participant_total', 'support_total', 'participants', 'hashtags', 'shares'));
        
