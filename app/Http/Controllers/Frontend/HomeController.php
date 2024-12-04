@@ -20,12 +20,12 @@ class HomeController extends Controller
 
         $hashtags = Hashtag::select('total')->latest()->first();
         $shares = Share::all()->count();
-        $support_total = $hashtags->total + $shares;
-        $participant_total = $participants + $support_total;
+        $support_total = @$hashtags->total + @$shares;
+        $participant_total = @$participants + @$support_total;
 
-        $numbers = $this->formatNumber($participants);
-        $t_lapor = $this->formatNumber($participant_total);
-        $t_dukung = $this->formatNumber($support_total);
+        $numbers = $this->formatNumber(@$participants);
+        $t_lapor = $this->formatNumber(@$participant_total);
+        $t_dukung = $this->formatNumber(@$support_total);
 
 
         return view('frontend.homepage', compact('numbers','t_lapor', 't_dukung'));
@@ -82,12 +82,12 @@ class HomeController extends Controller
             $participants = Participant::all()->count();  
             $hashtags = Hashtag::select('total')->latest()->first();
             $shares = Share::all()->count();
-            $support_total = $hashtags->total + $shares;
-            $participant_total = $participants + $support_total;
+            $support_total = @$hashtags->total + @$shares;
+            $participant_total = @$participants + @$support_total;
 
-            $numbers = $this->formatNumber($participants);
-            $t_lapor = $this->formatNumber($participant_total);
-            $t_dukung = $this->formatNumber($support_total);
+            $numbers = $this->formatNumber(@$participants);
+            $t_lapor = $this->formatNumber(@$participant_total);
+            $t_dukung = $this->formatNumber(@$support_total);
 
             DB::commit();
             // Mail::to($request->email)->send(new ThankYouMail($register));
@@ -106,12 +106,12 @@ class HomeController extends Controller
         $participants = Participant::all()->count();  
         $hashtags = Hashtag::select('total')->latest()->first();
         $shares = Share::all()->count();
-        $support_total = $hashtags->total + $shares;
-        $participant_total = $participants + $support_total;
+        $support_total = @$hashtags->total + @$shares;
+        $participant_total = @$participants + @$support_total;
 
-        $numbers = $this->formatNumber($participants);
-        $t_lapor = $this->formatNumber($participant_total);
-        $t_dukung = $this->formatNumber($support_total);
+        $numbers = $this->formatNumber(@$participants);
+        $t_lapor = $this->formatNumber(@$participant_total);
+        $t_dukung = $this->formatNumber(@$support_total);
 
         return response()->json(['numbers' => $numbers, 't_lapor' => $t_lapor, 't_dukung' => $t_dukung]);
 
