@@ -16,7 +16,7 @@
 
       <section id="first" class="bg-100 section-has-bg" style="background-image: url({{ asset('frontend/images/webp/background.webp') }});" >
         <div class="mb-5 d-flex flex-row justify-content-between">
-            <a class="logo" href="#"><img src="{{ asset('frontend/images/webp/kominfo.webp') }}" alt="" width="50" /></a>
+            <a class="logo" href="#"><img src="{{ asset('frontend/images/webp/komdigi.webp') }}" alt="" width="120" /></a>
             <a class="logo" href="#"><img src="{{ asset('frontend/images/webp/IOH-logo.webp') }}" alt="" width="120" /></a>
         </div>
         <div class="container-lg mb-5">
@@ -33,9 +33,9 @@
                   <p class="text-red indosat_bold mt-4">Laporkan aktivitas Judol dengan mudah,<span class="new-line"></span> bersama kita bisa menghentikan <span class="new-line"></span> dampak negatif judi online!</p>
                   </div>
 
-                <div class="d-flex flex-row gap-3">
+                <div class="d-flex flex-md-row flex-column gap-md-3 gap-0 ">
                   <button type="button" class="btn bg-red text-white mb-3 text-btn-padding indosat_bold rounded-pill px-4 mr" data-bs-toggle="modal" data-bs-target="#tnc"> Aturan Pelaporan </button>
-                  <button id="btnshare" type="button" class="btn bg-red text-white mb-3 text-btn-padding indosat_bold rounded-pill" data-bs-toggle="modal" data-bs-target="#share"> Share </button>
+                  <button id="btnshare" type="button" class="btn bg-red text-white mb-3 text-btn-padding indosat_bold rounded-pill" data-bs-toggle="modal" data-bs-target="#share"> Berikan Dukungan Kamu </button>
                   </button>
                 </div>
            
@@ -120,58 +120,41 @@
           </div>
          </div>
 
-        <div id="lakung" class="container-lg py-3">
-            <div class="row">
-                <div class="col-md-6 mb-5 mb-md-0">
-                  <div class="justify-content-center">
-                    <div class="col-md-12 col-lg-12 text-center mb-4">
-                      <h2 class="text-grey indosat_bold fs-title-total-lakung">Total Laporan</h2>
-                    </div>
-                  </div>
-                  <div class="row justify-content-center text-white position-relative">
-                    <img src="{{ asset('frontend/images/webp/koin1.webp') }}" class="coin1" alt="koin1" />
-                    <img src="{{ asset('frontend/images/webp/koin2.webp') }}" class="coin2" alt="koin1" />
-                    <div class="col-sm-8 col-10 p-col-mobile-desktop">
-                      <div class="card h-60 bg-total-lakung">
-                        <div class="card-body d-flex flex-column justify-content-around mx-auto text-center">
-                            <div class="my-3 my-sm-1 d-flex flex-row bd-highlight" id="t_lapor">
-                              @foreach($t_lapor as $l)
-                                <img class="number px-1" src="{{ asset('frontend/images/webp/'.$l.'.webp') }}" alt="" loading="lazy" />
-                              @endforeach
-                            </div>
-                        </div>
-                      </div>
-                      <!-- <p class="text-white fs-3 text-center mt-3" id="time"></p> -->
-                    </div>
-                  </div>
-                </div>
 
-                <div class="col-md-6 ">
-                  <div class="justify-content-center">
-                    <div class="col-md-12 col-lg-12 text-center mb-4">
-                      <h2 class="text-grey indosat_bold fs-title-total-lakung">Total Dukungan</h2>
-                    </div>
-                  </div>
-                  <div class="row justify-content-center text-white position-relative">
-                    <img src="{{ asset('frontend/images/webp/koin1.webp') }}" class="coin1" alt="koin1" />
-                    <img src="{{ asset('frontend/images/webp/koin2.webp') }}" class="coin2" alt="koin1" />
-                    <div class="col-sm-8 col-10 p-col-mobile-desktop">
-                      <div class="card h-60 bg-total-lakung">
-                        <div class="card-body d-flex flex-column justify-content-around mx-auto text-center">
-                            <div class="my-3 my-sm-1 d-flex flex-row bd-highlight" id="t_dukung">
-                              @foreach($t_dukung as $d)
-                                <img class="number px-1" src="{{ asset('frontend/images/webp/'.$d.'.webp') }}" alt="" loading="lazy" />
-                              @endforeach
+        <div id="lakung" class="container-sm py-3">
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-1" align="center">
+                    <div class="accord-lakung accordion bg-total-lakung" id="t-lapor-accordion">
+                        <div class="col-12" role="complementary">
+                            <h2 id="flush-headingOne">
+                              <button class="accordion-button collapsed bg-transparent text-grey indosat_bold fs-title-total-lakung" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-controls="collapse-manufacturers" aria-expanded="false" >
+                               Total Laporan
+                              </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#t-lapor-accordion">
+                              <div class="accordion-body indosat_bold text-red fs-total-lakung py-0 px-0" id="t_lapor">{{ $t_lapor }}</div>
                             </div>
-                        </div>
-                      </div>
-                      <!-- <p class="text-white fs-3 text-center mt-3" id="time"></p> -->
+                          </div>
                     </div>
-                  </div>
+                </div>
+                <div class="col-md-6" align="center">
+                    <div class="accord-lakung accordion bg-total-lakung" id="t-dukung-accordion">
+                        <div class="col-12">
+                            <h2 id="flush-headingTwo">
+                              <button  class="accordion-button collapsed bg-transparent text-grey indosat_bold fs-title-total-lakung" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Total Dukungan
+                              </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#t-dukung-accordion">
+                              <div class="accordion-body indosat_bold text-red fs-total-lakung py-0 px-0" id="t_dukung">{{ $t_dukung }}</div>
+                            </div>
+                          </div>
+                    </div>
                 </div>
 
             </div>
         </div>
+
 
          <!-- <div id="flockler-embed-19343bb7fbb007aab0f2329c6ae03ff7"></div> -->
             <!-- <script src="https://plugins.flockler.com/embed/19343b52fa00c477565a54d5fd8eb5d7/19343bb7fbb007aab0f2329c6ae03ff7" async></script> -->
@@ -243,7 +226,7 @@
             _token: $('meta[name="csrf-token"]').attr('content') // Get CSRF token
         };
 
-        const url = 'https://generasiantijudol.id/';
+        const url = 'https://ioh.co.id/portal/id/ioh-corp-generasiantijudol';
 
         // Perform AJAX POST request
         $.ajax({

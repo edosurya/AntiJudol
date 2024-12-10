@@ -353,6 +353,36 @@ label.fs-label {
     }
 }
 
+#lakung {
+	max-width: 70%;
+}
+
+@media (max-width: 768px) {
+	#lakung {
+		max-width: 100%;
+	}
+}
+
+.accord-lakung{
+    position: relative;
+    display: flex;
+    align-self: center; 
+    width: 70%;
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(1px);
+}
+
+@media (max-width: 768px) {
+	.accord-lakung{
+	    width: 85%;
+	}
+}
+
+.accordion-button:focus {
+    border-color: unset;
+    box-shadow: unset;
+}
+
 .bg-total-partisipan {
    	background: #fdfdfd 0% 0% no-repeat padding-box;
 	box-shadow: 0px 3px 6px #00000069;
@@ -361,10 +391,10 @@ label.fs-label {
 }
 
 .bg-total-lakung {
-   	background: #fdfdfd 0% 0% no-repeat padding-box;
+   	background: rgb(253 253 253 / 51%);
 	box-shadow: 0px 3px 6px #00000069;
 	border: 1px solid #B7161C;
-	border-radius: 50px;
+	border-radius: 30px;
 }
 
 
@@ -383,6 +413,11 @@ label.fs-label {
 	text-shadow: 0px 8px 16px #00000075;
 }
 
+.fs-total-lakung {
+	font-size: 80px;
+	text-shadow: 0px 1px 4px #00000075;
+}
+
 @media (max-width: 992px) {
 
 	.bg-total-partisipan {
@@ -395,14 +430,26 @@ label.fs-label {
 	}
 
 	.fs-title-total-lakung {
-		font-size: 25px;
+		font-size: 22px;
 	}
 
 	.fs-total-partisipan {
 		font-size: 60px;
 	}
+
+	.fs-total-lakung {
+		font-size: 70px;
+	}
 }
 
+.accordion-button:not(.collapsed):after {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1024 1024' class='icon' version='1.1' xmlns='http://www.w3.org/2000/svg' fill='%23000000'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cpath d='M903.232 256l56.768 50.432L512 768 64 306.432 120.768 256 512 659.072z' fill='%23000000'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+    transform: rotate(-180deg);
+}
+
+.accordion-button:not(.collapsed) {
+	box-shadow: none;
+}
 
 .rounded-img {
 	border-radius: 40px;

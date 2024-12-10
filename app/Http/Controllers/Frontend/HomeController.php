@@ -24,8 +24,10 @@ class HomeController extends Controller
         $participant_total = @$participants + @$support_total;
 
         $numbers = $this->formatNumber(@$participants);
-        $t_lapor = $this->formatNumber(@$participant_total);
-        $t_dukung = $this->formatNumber(@$support_total);
+        // $t_lapor = $this->formatNumber(@$participant_total);
+        // $t_dukung = $this->formatNumber(@$support_total);
+        $t_lapor = $participant_total;
+        $t_dukung = $support_total;
 
 
         return view('frontend.homepage', compact('numbers','t_lapor', 't_dukung'));
@@ -86,8 +88,10 @@ class HomeController extends Controller
             $participant_total = @$participants + @$support_total;
 
             $numbers = $this->formatNumber(@$participants);
-            $t_lapor = $this->formatNumber(@$participant_total);
-            $t_dukung = $this->formatNumber(@$support_total);
+            // $t_lapor = $this->formatNumber(@$participant_total);
+            // $t_dukung = $this->formatNumber(@$support_total);
+            $t_lapor = $participant_total;
+            $t_dukung = $support_total;
 
             DB::commit();
             // Mail::to($request->email)->send(new ThankYouMail($register));
@@ -110,8 +114,8 @@ class HomeController extends Controller
         $participant_total = @$participants + @$support_total;
 
         $numbers = $this->formatNumber(@$participants);
-        $t_lapor = $this->formatNumber(@$participant_total);
-        $t_dukung = $this->formatNumber(@$support_total);
+        $t_lapor = $participant_total;
+        $t_dukung = $support_total;
 
         return response()->json(['numbers' => $numbers, 't_lapor' => $t_lapor, 't_dukung' => $t_dukung]);
 

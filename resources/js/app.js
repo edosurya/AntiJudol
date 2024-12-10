@@ -111,25 +111,11 @@ $(document).ready(function() {
                 }
 
                 var v_t_lapor = response.t_lapor;
-                var c_t_lapor = '';
-                var j;
-
-                for (let j = 0; j < v_t_lapor.length; j++) {
-                  c_t_lapor += `<img class="number px-1" src="../frontend/images/webp/`+v_t_lapor[j]+`.webp" alt="" loading="lazy" />`;
-                  // console.log(c_t_lapor);
-                }
-
                 var v_t_dukung = response.t_dukung;
-                var c_t_dukung = '';
-                var k;
-
-                for (let k = 0; k < v_t_dukung.length; k++) {
-                  c_t_dukung += `<img class="number px-1" src="../frontend/images/webp/`+v_t_dukung[k]+`.webp" alt="" loading="lazy" />`;
-                }
 
                 totalSubmission.html(text);
-                t_lapor.html(c_t_lapor);
-                t_dukung.html(c_t_dukung);
+                t_lapor.html(v_t_lapor);
+                t_dukung.html(v_t_dukung);
 
             },
             error: function(xhr) {
@@ -207,25 +193,12 @@ function refreshResult() {
         }
 
         var v_t_lapor = response.t_lapor;
-        var c_t_lapor = '';
-        var j;
-
-        for (let j = 0; j < v_t_lapor.length; j++) {
-          c_t_lapor += `<img class="number px-1" src="../frontend/images/webp/`+v_t_lapor[j]+`.webp" alt="" loading="lazy" />`;
-          // console.log(c_t_lapor);
-        }
-
         var v_t_dukung = response.t_dukung;
-        var c_t_dukung = '';
-        var k;
-
-        for (let k = 0; k < v_t_dukung.length; k++) {
-          c_t_dukung += `<img class="number px-1" src="../frontend/images/webp/`+v_t_dukung[k]+`.webp" alt="" loading="lazy" />`;
-        }
 
         totalSubmission.html(text);
-        t_lapor.html(c_t_lapor);
-        t_dukung.html(c_t_dukung); 
+        t_lapor.html(v_t_lapor);
+        t_dukung.html(v_t_dukung);
+
     }).fail(function(xhr, status, error) {
       console.error('Error:', error);   // Handle errors here
     });
