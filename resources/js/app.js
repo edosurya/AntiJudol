@@ -102,7 +102,7 @@ $(document).ready(function() {
                 $('#fullname').val('');
                 $('#email').val('');
                 $('#url').val('');
-                var numbers = response.numbers;
+                var numbers = response.t_lapor;
                 var text = '';
                 var i;
                 for (let i = 0; i < numbers.length; i++) {
@@ -110,7 +110,7 @@ $(document).ready(function() {
                   // console.log(text);
                 }
 
-                var v_t_lapor = response.t_lapor;
+                var v_t_lapor = response.numbers;
                 var v_t_dukung = response.t_dukung;
 
                 totalSubmission.html(text);
@@ -184,7 +184,7 @@ $(window).on("load", function () {
 function refreshResult() {
     // Send AJAX POST request
     $.get('/result', function(response) {
-        var numbers = response.numbers;
+        var numbers = response.t_lapor;
         var text = '';
         var i;
         for (let i = 0; i < numbers.length; i++) {
@@ -192,7 +192,7 @@ function refreshResult() {
           // console.log(text);
         }
 
-        var v_t_lapor = response.t_lapor;
+        var v_t_lapor = response.numbers;
         var v_t_dukung = response.t_dukung;
 
         totalSubmission.html(text);

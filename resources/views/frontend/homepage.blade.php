@@ -109,7 +109,7 @@
               <div class="card h-60 bg-total-partisipan">
                 <div class="card-body d-flex flex-column justify-content-around mx-auto text-center">
                     <div class="my-3 my-sm-1 d-flex flex-row bd-highlight" id="totalSubmission">
-                      @foreach($numbers as $n)
+                      @foreach($t_lapor as $n)
                         <img class="number px-1" src="{{ asset('frontend/images/webp/'.$n.'.webp') }}" alt="" loading="lazy" />
                       @endforeach
                     </div>
@@ -128,11 +128,11 @@
                         <div class="col-12" role="complementary">
                             <h2 id="flush-headingOne">
                               <button class="accordion-button collapsed bg-transparent text-grey indosat_bold fs-title-total-lakung" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-controls="collapse-manufacturers" aria-expanded="false" >
-                               Total Laporan
+                               Total Submit Link
                               </button>
                             </h2>
                             <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#t-lapor-accordion">
-                              <div class="accordion-body indosat_bold text-red fs-total-lakung py-0 px-0" id="t_lapor">{{ $t_lapor }}</div>
+                              <div class="accordion-body indosat_bold text-red fs-total-lakung py-0 px-0" id="t_lapor">{{ $numbers }}</div>
                             </div>
                           </div>
                     </div>
