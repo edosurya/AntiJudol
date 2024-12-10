@@ -559,6 +559,11 @@ img.number {
 	}
 }
 
+.close {
+	position: absolute;
+    right: 0;
+}
+
 .modal-header {
 	display: block;
 	border-bottom: none;
@@ -589,4 +594,8 @@ img.number {
     .period .card-body {
         padding: 1px;
     }
+}
+
+.btn:focus, .btn:active {
+    box-shadow: unset;
 }
