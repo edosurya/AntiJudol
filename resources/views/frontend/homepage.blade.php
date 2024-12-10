@@ -121,7 +121,7 @@
          </div>
 
 
-        <div id="lakung" class="container-sm py-3">
+        <div id="lakung" class="container py-2">
             <div class="row">
                 <div class="col-md-6 mb-3 mb-md-1" align="center">
                     <div class="accord-lakung accordion bg-total-lakung" id="t-lapor-accordion">
