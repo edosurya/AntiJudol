@@ -233,9 +233,11 @@
 
 <script type="text/javascript">
     
+    var copyBtn = document.getElementById("copy-btn");
     /* Script starts */
     document.querySelector("#copy-btn").addEventListener("click", (e) => {
         var text = document.querySelector("p.fbm-text").innerText;
+        copyBtn.click();
 
         window.navigator.clipboard.writeText(text).then((x) => {
             document.querySelector(".fbm-copied-message").innerHTML =
@@ -246,9 +248,10 @@
         });
     });
 
+    // var btnCloseShare = document.getElementById('btnCloseShare')
     function generateBtn(c){
         var el = document.getElementById("btnAction");
-
+        // btnCloseShare.click();
         if(c == 'fb') { el.innerHTML = `<a class="btn bg-white text-black mb-3 text-btn-padding indosat_bold rounded-pill" onclick="sosmedShare('1')"> Bagikan</a>`; }
         else if(c == 'x') { el.innerHTML = `<a class="btn bg-white text-black mb-3 text-btn-padding indosat_bold rounded-pill" onclick="sosmedShare('2')"> Bagikan</a>`; }
         else if( c == 'wa') { el.innerHTML = `<a class="btn bg-white text-black mb-3 text-btn-padding indosat_bold rounded-pill" onclick="sosmedShare('4')"> Bagikan</a>`; }

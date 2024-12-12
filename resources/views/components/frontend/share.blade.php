@@ -1,8 +1,8 @@
-<div class="modal" id="share">
-  <div class="modal-dialog modal-md modal-dialog-scrollable d-flex align-items-center justify-content-center">
+<div class="modal" id="share" data-backdrop="static" data-keyboard="false">
+  <div class="modal-dialog modal-md d-flex align-items-center justify-content-center">
     <div class="modal-content bg-red">
         <div class="d-flex flex-row-reverse close">
-            <button type="button" class="btn-close btn-close-white p-3" aria-label="Close" data-bs-dismiss="modal"></button>
+            <button type="button" class="btn-close btn-close-white p-3" aria-label="Close" data-bs-dismiss="modal" id="btnCloseShare"></button>
         </div>
         <div class="modal-header">
             <div class="text-center">
@@ -39,7 +39,7 @@
 
 
 <div class="modal fade" id="instagram">
-  <div class="modal-dialog modal-md">
+  <div class="modal-dialog modal-md d-flex align-items-center justify-content-center">
     <div class="modal-content bg-red">
         <div class="d-flex flex-row-reverse close">
             <button type="button" class="btn-close btn-close-white p-3" aria-label="Close" data-bs-dismiss="modal"></button>
@@ -65,7 +65,7 @@
 
 
 <div class="modal fade" id="others">
-  <div class="modal-dialog modal-md">
+  <div class="modal-dialog modal-md d-flex align-items-center justify-content-center">
     <div class="modal-content bg-red">
         <div class="d-flex flex-row-reverse close">
             <button type="button" class="btn-close btn-close-white p-3" aria-label="Close" data-bs-dismiss="modal"></button>
@@ -106,7 +106,6 @@
     </div>
   </div>
 </div>
-
 
 
 
