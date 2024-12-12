@@ -233,6 +233,28 @@
 
 <script type="text/javascript">
     
+    /* Script starts */
+    document.querySelector("#copy-btn").addEventListener("click", (e) => {
+        var text = document.querySelector("p.fbm-text").innerText;
+
+        window.navigator.clipboard.writeText(text).then((x) => {
+            document.querySelector(".fbm-copied-message").innerHTML =
+                "Copied to Clipboard";
+            setTimeout(() => {
+                document.querySelector(".fbm-copied-message").innerHTML = "";
+            }, 5000);
+        });
+    });
+
+    function generateBtn(c){
+        var el = document.getElementById("btnShare");
+
+        if(c == 'fb') { el.innerHTML = `<a class="btn bg-white text-black mb-3 text-btn-padding indosat_bold rounded-pill" onclick="sosmedShare('1')"> Bagikan</a>`; }
+        else if(c == 'x') { el.innerHTML = `<a class="btn bg-white text-black mb-3 text-btn-padding indosat_bold rounded-pill" onclick="sosmedShare('2')"> Bagikan</a>`; }
+        else if( c == 'wa') { el.innerHTML = `<a class="btn bg-white text-black mb-3 text-btn-padding indosat_bold rounded-pill" onclick="sosmedShare('4')"> Bagikan</a>`; }
+    }
+
+
     function sosmedShare(channel) {
 
         let formData = {

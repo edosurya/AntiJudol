@@ -628,3 +628,51 @@ img.number {
 .btn:focus, .btn:active {
     box-shadow: unset;
 }
+
+
+
+
+.fbm-hero-title {
+  text-align: left !important;
+  margin-bottom: 40px;
+}
+.parent{
+    position: relative;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+mark{
+    padding: 20px;
+}
+
+/* Start Custom Styles */
+.fbm-content-wrapper {
+	background: lightseagreen;
+	padding: 40px;
+	box-shadow: 0 0 20px -5px black;
+}
+.fbm-hero-title {
+	margin-bottom: 20px;
+}
+#fbm-copy-btn {
+	padding: 5px 10px;
+	margin: 20px 0;
+	border: none;
+	border-radius: 5px;
+	background: lightgreen;
+  cursor: pointer;
+}
+#fbm-test-paste {
+	display: block;
+	border: none;
+	width: 100%;
+	padding: var(--fbm-padding-standard);
+}
+#fbm-test-paste:focus{
+    outline: none;
+    border: none;
+}
