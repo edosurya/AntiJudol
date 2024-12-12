@@ -275,10 +275,10 @@
                     window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(url),'sharer','toolbar=0,status=0,width=626,height=436');
                     return false;
                 } else if(channel == 2) {
-                    window.open('https://twitter.com/intent/tweet?text=Terima%20kasih%20sudah%20melapor!%20Ayo%20laporkan%20lebih%20banyak%20link%20Judi%20Online%20dan%20ajak%20sebanyak-banyaknya%20para%20generasi%20muda%20menjadi%20%23GenerasiAntiJudol.%20Kunjungi%20https%3A%2F%2Fioh.co.id%2Fportal%2Fid%2Fioh-corp-generasiantijudol');
+                    window.open('https://twitter.com/intent/tweet?text=Jadilah%20%23GenerasiAntiJudol%20Bersama%20kita%20lawan%20Judi%20Online%20dengan%20Lihat%2C%20Lapor%2C%20Blokir%20di%20https%3A%2F%2Fioh.co.id%2Fportal%2Fid%2Fioh-corp-generasiantijudol');
                     return false;
                 } else if(channel == 4) {
-                    window.open('https://wa.me/?text=Terima%20kasih%20sudah%20melapor!%20Ayo%20laporkan%20lebih%20banyak%20link%20Judi%20Online%20dan%20ajak%20sebanyak-banyaknya%20para%20generasi%20muda%20menjadi%20%23GenerasiAntiJudol.%20Kunjungi%20https%3A%2F%2Fioh.co.id%2Fportal%2Fid%2Fioh-corp-generasiantijudol');
+                    window.open('https://wa.me/?text=Jadilah%20%23GenerasiAntiJudol%20Bersama%20kita%20lawan%20Judi%20Online%20dengan%20Lihat%2C%20Lapor%2C%20Blokir%20di%20https%3A%2F%2Fioh.co.id%2Fportal%2Fid%2Fioh-corp-generasiantijudol');
                     return false;
                 }
             },
