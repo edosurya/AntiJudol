@@ -85,7 +85,7 @@
             <div class="mt-5 px-4">
                 <p class="text-black indosat_bold text-start"> Caption</p>
                 <div style="padding: 5px; background-color: #e7e7e7; border-radius: 10px;text-align: left;">
-                <p class="fbm-text py-2 px-2">Jadilah #GenerasiAntiJudol Bersama kita lawan Judi Online dengan Lihat, Lapor, Blokir di ioh.co.id/GenerasiAntiJudol
+                <p class="fbm-text py-2 px-2 indosat_bold">Jadilah #GenerasiAntiJudol Bersama kita lawan Judi Online dengan Lihat, Lapor, Blokir di ioh.co.id/GenerasiAntiJudol
                 </p>
                 </div>
                 <div class="mt-2 mb-2">
