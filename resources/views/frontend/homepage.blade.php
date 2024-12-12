@@ -247,7 +247,7 @@
     });
 
     function generateBtn(c){
-        var el = document.getElementById("btnShare");
+        var el = document.getElementById("btnAction");
 
         if(c == 'fb') { el.innerHTML = `<a class="btn bg-white text-black mb-3 text-btn-padding indosat_bold rounded-pill" onclick="sosmedShare('1')"> Bagikan</a>`; }
         else if(c == 'x') { el.innerHTML = `<a class="btn bg-white text-black mb-3 text-btn-padding indosat_bold rounded-pill" onclick="sosmedShare('2')"> Bagikan</a>`; }
@@ -270,7 +270,7 @@
             method: 'POST',
             data: formData,
             success: function (response) {
-                console.log(response);
+                // console.log(response);
                 if(channel == 1) {
                     window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(url),'sharer','toolbar=0,status=0,width=626,height=436');
                     return false;

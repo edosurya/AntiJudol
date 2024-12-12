@@ -100,7 +100,7 @@
        
       <!-- Modal footer -->
       <div class="modal-footer justify-content-center text-center">
-            <div id="btnShare"></div>
+            <div id="btnAction"></div>
       </div>
 
     </div>
