@@ -121,39 +121,53 @@
          </div>
 
 
+
         <div id="lakung" class="container py-2">
             <div class="row">
-                <div class="col-md-6 mb-3 mb-md-1" align="center">
-                    <div class="accord-lakung accordion bg-total-lakung" id="t-lapor-accordion">
+                <div class="col-md-12" align="center">
+                    <div class="accord-lakung accordion bg-total-lakung" id="t-lakung-accordion">
                         <div class="col-12" role="complementary">
-                            <h2 id="flush-headingOne">
-                              <button class="accordion-button collapsed bg-transparent text-grey indosat_bold fs-title-total-lakung" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-controls="collapse-manufacturers" aria-expanded="false" >
-                               Total Submit Link
+                            <h2 id="flush-headingOne" class="d-inline-block">
+                              <button class="accordion-button collapsed bg-transparent text-grey indosat_bold fs-title-total-dlakung" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-controls="collapse-manufacturers" aria-expanded="false" >
+                               Lihat Detail Dukungan
                               </button>
                             </h2>
-                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#t-lapor-accordion">
-                              <div class="accordion-body indosat_bold text-red fs-total-lakung py-0 px-0" id="t_lapor">{{ $numbers }}</div>
-                            </div>
-                          </div>
-                    </div>
-                </div>
-                <div class="col-md-6" align="center">
-                    <div class="accord-lakung accordion bg-total-lakung" id="t-dukung-accordion">
-                        <div class="col-12">
-                            <h2 id="flush-headingTwo">
-                              <button  class="accordion-button collapsed bg-transparent text-grey indosat_bold fs-title-total-lakung" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                Total Dukungan
-                              </button>
-                            </h2>
-                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#t-dukung-accordion">
-                              <div class="accordion-body indosat_bold text-red fs-total-lakung py-0 px-0" id="t_dukung">{{ $t_dukung }}</div>
-                            </div>
-                          </div>
-                    </div>
-                </div>
 
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#t-lakung-accordion">
+                                <div class="accordion-body">
+                                    <div class="row">
+                                        <div class="col-md-6 col-12 mb-3 mb-md-1">
+                                              <div class="row justify-content-center">
+                                                <div class="col-md-12 col-lg-12 text-center">
+                                                  <h2 class="text-grey indosat_bold fs-title-total-lakung">Total Submit Link</h2>
+                                                  <img src="{{ asset('frontend/images/webp/generasi-anti-judol.webp') }}" alt="" width="70%" loading="lazy" /> 
+                                                </div>
+                                              </div>
+                                              <div class="indosat_bold text-red fs-total-lakung py-0 px-0" id="t_lapor">{{ $numbers }}</div>
+                                        </div>
+                                        <div class="col-md-6 col-12">
+                                              <div class="row justify-content-center">
+                                                <div class="col-md-12 col-lg-12 text-center">
+                                                  <h2 class="text-grey indosat_bold fs-title-total-lakung">Total Dukungan</h2>
+                                                  <img src="{{ asset('frontend/images/webp/generasi-anti-judol.webp') }}" alt="" width="70%" loading="lazy" /> 
+                                                </div>
+                                              </div>
+                                              <div class="indosat_bold text-red fs-total-lakung py-0 px-0" id="t_dukung">{{ $t_dukung }}</div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                          </div>
+                    </div>
+                </div>
             </div>
         </div>
+
+
+
 
 
          <!-- <div id="flockler-embed-19343bb7fbb007aab0f2329c6ae03ff7"></div> -->

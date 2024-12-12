@@ -408,6 +408,11 @@ label.fs-label {
 	text-shadow: 0px 6px 12px #0000004D;
 }
 
+.fs-title-total-dlakung {
+	font-size: 40px;
+	text-shadow: 0px 8px 16px #00000075;
+}
+
 .fs-total-partisipan {
 	font-size: 100px;
 	text-shadow: 0px 8px 16px #00000075;
@@ -416,6 +421,19 @@ label.fs-label {
 .fs-total-lakung {
 	font-size: 80px;
 	text-shadow: 0px 1px 4px #00000075;
+}
+
+
+@media (max-width: 1083px) {
+	.fs-title-total-dlakung {
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 855px) {
+	.fs-title-total-dlakung {
+		font-size: 20px;
+	}
 }
 
 @media (max-width: 992px) {
@@ -442,9 +460,20 @@ label.fs-label {
 	}
 }
 
+.accordion-button:after {
+	margin: 2px 0px 0px 10px;
+}
+
+.accordion-button:after {
+   background-image: url("data:image/svg+xml,%3Csvg fill='%235c5c5c' width='256px' height='256px' viewBox='-8.5 0 32 32' version='1.1' xmlns='http://www.w3.org/2000/svg' stroke='%235c5c5c'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Ctitle%3Eright%3C/title%3E%3Cpath d='M7.75 16.063l-7.688-7.688 3.719-3.594 11.063 11.094-11.344 11.313-3.5-3.469z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+   width: 2.25rem;
+   height: 2.25rem;
+   background-size: 2.25rem;
+}
+
 .accordion-button:not(.collapsed):after {
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1024 1024' class='icon' version='1.1' xmlns='http://www.w3.org/2000/svg' fill='%23000000'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cpath d='M903.232 256l56.768 50.432L512 768 64 306.432 120.768 256 512 659.072z' fill='%23000000'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
-    transform: rotate(-180deg);
+    background-image: url("data:image/svg+xml,%3Csvg fill='%235c5c5c' width='256px' height='256px' viewBox='-8.5 0 32 32' version='1.1' xmlns='http://www.w3.org/2000/svg' stroke='%235c5c5c'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Ctitle%3Eright%3C/title%3E%3Cpath d='M7.75 16.063l-7.688-7.688 3.719-3.594 11.063 11.094-11.344 11.313-3.5-3.469z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+    transform: rotate(90deg);
 }
 
 .accordion-button:not(.collapsed) {
