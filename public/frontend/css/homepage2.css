@@ -680,3 +680,11 @@ mark{
     outline: none;
     border: none;
 }
+
+@media (max-width: 458px) {
+	.fs-share {
+		font-size: 14px;
+	}
+}
+
+
