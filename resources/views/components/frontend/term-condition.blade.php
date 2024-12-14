@@ -16,10 +16,10 @@
         </div>
         <div  class="mb-1">1. Cara Melaporkan</div>
         <ul>
-            <li>Identitas Diri: Silakan cantumkan nama lengkap dan alamat email kamu yang aktif.</li>
-            <li>Link Konten: Tempelkan tautan langsung ke konten judi online yang ingin kamu laporkan.</li>
-            <li>Kirim Laporan: Klik tombol "Kirim" untuk mengirimkan laporan kamu.</li>
-            <li>Bagikan “infografik”: klik ikon media sosial untuk membagikan infografik ke sosial media-mu.</li>
+            <li><span class="indosat_bold">Identitas Diri:</span> Silakan cantumkan nama lengkap dan alamat email kamu yang aktif.</li>
+            <li><span class="indosat_bold">Link Konten:</span> Tempelkan tautan langsung ke konten judi online yang ingin kamu laporkan.</li>
+            <li><span class="indosat_bold">Kirim Laporan:</span> Klik tombol "Kirim" untuk mengirimkan laporan kamu.</li>
+            <li><span class="indosat_bold">Bagikan “infografik”:</span> klik ikon media sosial untuk membagikan infografik ke sosial media-mu.</li>
             <small>*Infografik ini adalah visual konten ditujukan untuk melapor dan ajakan bertindak melawan judi online</small>
 
         </ul>
@@ -28,29 +28,30 @@
         <div  class="mb-1">2. Tunjukkan Partisipasimu!</div>
         <ul>
             <li>1 Link yang dilaporkan = 1 Partisipasi.</li>
-            <li>1 Share + #GenerasiAntiJudol di media sosial = 1 Dukungan.</li>
-            <li>Total Partisipasi = Submission + Dukungan.</li>
+            <li>1 Share + #GenerasiAntiJudol di media sosial = 1 Dukungan</li>
+            <li>Total Partisipasi = Submission + Dukungan</li>
         </ul>
 
         <div  class="mb-1">3. Proses Pelaporan</div>
         <ul>
-            <li>Data Aman: Data yang kamu berikan akan kami simpan secara aman dan rahasia.</li>
-            <li>Langsung ke Kominfo: Laporan kamu akan kami teruskan ke Kementerian Komunikasi dan Informatika (Kominfo) melalui platform <a href="https://aduankonten.id/" target="_blank">aduankonten.id. </a></li>
-            <li>Konfirmasi: Kamu akan menerima email konfirmasi sebagai tanda terima laporan.</li>
+            <li><span class="indosat_bold">Data Aman:</span> Data yang kamu berikan akan kami simpan secara aman dan rahasia.</li>
+            <li><span class="indosat_bold">Langsung ke Kemenkomdigi:<span> Laporan kamu akan kami teruskan ke Kementerian Komunikasi dan Digital (Kemenkomdigi) melalui platform aduankonten.id. </a></li>
+            <li><span class="indosat_bold">Konfirmasi:</span> Kamu akan menerima email konfirmasi sebagai tanda terima laporan.</li>
         </ul>
 
 
         <div class="rounded-1 mb-1">
-            <p>Terima kasih atas partisipasi aktif kamu. Mari bersama-sama kita lawan judi online untuk melindungi generasi muda Indonesia!
-                <br>Bersama Kita Lawan Judol
-                <br/>Salam, #GenerasiAntiJudol</p>
+            <p class="indosat_bold">Terima kasih atas partisipasi aktif kamu. Mari bersama-sama kita lawan judi online untuk melindungi generasi muda Indonesia!
+            <br/>
+            <br>Bersama Kita Lawan Judi Online
+            <br/>Salam, #GenerasiAntiJudol</p>
         </div>
 
     </div>
 
       <!-- Modal footer -->
       <div class="modal-footer justify-content-center text-center">
-        <button type="button" class="btn rounded-3 text-white indosat_bold btn-register text-btn-padding" data-bs-dismiss="modal">Tutup</button>
+        <button type="button" class="btn bg-red text-white mb-3 text-btn-padding indosat_bold rounded-pill" data-bs-dismiss="modal">Tutup</button>
       </div>
 
     </div>

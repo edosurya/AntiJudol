@@ -24,13 +24,14 @@
               <div class="col-12 col-sm-7 mb-5 h-100">
                   <img class="mb-3" src="{{ asset('frontend/images/webp/generasi-anti-judol.webp') }}" alt="" width="100%" loading="lazy" /> 
                   <div class="fs-generasi-anti-judol mt-3">
-                  <p class="text-grey indosat_medium"> Gerakan Generas Anti Judi Online hadir sebagal platform untuk melaporkan dan memberantas aktivitas judi online yang merusak generasi bangsa.
+                  <p class="text-grey indosat_medium"> Gerakan Generasi Anti Judi Online hadir sebagal platform untuk melaporkan dan memberantas aktivitas judi online yang merusak generasi bangsa.
                   </p>
-                  <p class="indosat_bold"> "Sampal Saat ini sudah sebanyak 8,8 juta masyarakat indonesia tercatat bermain judi Online, dan 80% diantaranya adalah anak-anak muda yang merupalan generasi harapan Indonesia. (Berdasarkan pernyataan dari Menko Polkam Budi Gunawan, Nov 2024). Dan didukung dengan pernyataan Menteri Komunikasi dan Digital RI Meutya Hafid mengatakan ada 80 ribu anak di bawah usia 10 tahun yang terpapar judi online."</p>
+                  <p class="indosat_bold"><i> "Sampai saat ini sudah sebanyak 8,8 juta masyarakat Indonesia tercatat bermain Judi Online, dan 80% diantaranya adalah anak-anak muda yang merupakan generasi harapan Indonesia. (Berdasarkan pernyataan dari Menko Polkam Budi Gunawan, Nov 2024) dan didukung dengan pernyataan Menteri Komunikasi dan Digital RI Meutya Hafid mengatakan ada 80 ribu anak di bawah usia 10 tahun yang terpapar judi online."</i></p>
 
-                  <p class="text-grey indosat_medium">Dengan itu, melalui gerakan ini kami mengajak semua lapisan masyarakat untuk berpartisipasi aktif dalam menjaga masa depan bebas judi online dan aman bagi anak-anak muda indonesia.</p>
+                  <p class="text-grey indosat_medium">Dengan itu, melalui gerakan Ini kami mengajak semua lapisan masyarakat untuk berpartisipasi aktif dalam menjaga masa depan bebas judi online dan aman bagi anak-anak muda Indonesia.</p>
 
-                  <p class="text-red indosat_bold mt-4">Laporkan aktivitas Judol dengan mudah,<span class="new-line"></span> bersama kita bisa menghentikan <span class="new-line"></span> dampak negatif judi online!</p>
+                  <p class="text-red indosat_bold mt-4">Laporkan aktivitas Judi Online dengan mudah<span class="new-line"></span>
+                    Bersama kita bisa menghentikan dampak negatif Judi Online!</p>
                   </div>
 
                 <div class="d-flex flex-md-row flex-column gap-md-3 gap-0 ">
@@ -278,10 +279,10 @@
                     window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(url),'sharer','toolbar=0,status=0,width=626,height=436');
                     return false;
                 } else if(channel == 2) {
-                    window.open('https://twitter.com/intent/tweet?text=Jadilah%20%23GenerasiAntiJudol%20Bersama%20kita%20lawan%20Judi%20Online%20dengan%20Lihat%2C%20Lapor%2C%20Blokir%20di%20https%3A%2F%2Fioh.co.id%2Fportal%2Fid%2Fioh-corp-generasiantijudol');
+                    window.open('https://twitter.com/intent/tweet?text=Jadilah%20%23GenerasiAntiJudol.%20Bersama%20kita%20lawan%20Judi%20Online%20dengan%20Lihat%2C%20Lapor%2C%20Blokir%20di%20ioh.co.id%2FGenerasiAntiJudol');
                     return false;
                 } else if(channel == 4) {
-                    window.open('https://wa.me/?text=Jadilah%20%23GenerasiAntiJudol%20Bersama%20kita%20lawan%20Judi%20Online%20dengan%20Lihat%2C%20Lapor%2C%20Blokir%20di%20https%3A%2F%2Fioh.co.id%2Fportal%2Fid%2Fioh-corp-generasiantijudol');
+                    window.open('https://wa.me/?text=Jadilah%20%23GenerasiAntiJudol.%20Bersama%20kita%20lawan%20Judi%20Online%20dengan%20Lihat%2C%20Lapor%2C%20Blokir%20di%20ioh.co.id%2FGenerasiAntiJudol');
                     return false;
                 }
             },

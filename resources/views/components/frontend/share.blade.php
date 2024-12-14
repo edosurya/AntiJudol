@@ -76,7 +76,7 @@
             </div>
         </div>
         <div class="text-center bg-white py-2">
-            <p class="px-4 text-black indosat_regular"> Berikan dukungan anda dengan download image dan copy caption dibawah untuk dibagikan pada social media anda sebagai bentuk dukungan #GERAKANANTIJUDOL</p>
+            <p class="px-4 text-black indosat_regular"> Berikan dukungan Anda dengan unduh gambar dan salin <i>caption</i> di bawah untuk dibagikan <span class="new-line"></span>ke <i>social media</i> sebagai bentuk dukungan #GenerasiAntiJudol</p>
             <img src="{{ asset('frontend/images/webp/gerakanantijudol.webp') }}" alt="" width="50%" />
             <div class="mt-3">
             <a href="{{ asset('frontend/images/banner.png') }}" class="btn btn-sm bg-red text-white text-btn-padding indosat_bold rounded-pill px-4 mr"  download="gerakanantijudol"><img src="{{ asset('frontend/images/download-icon-white.png') }}" alt="" width="15" download /> Unduh Gambar </a>
@@ -85,7 +85,7 @@
             <div class="mt-5 px-4">
                 <p class="text-black indosat_bold text-start"> Caption</p>
                 <div style="padding: 5px; background-color: #e7e7e7; border-radius: 10px;text-align: left;">
-                <p class="fbm-text py-2 px-2 indosat_bold">Jadilah #GenerasiAntiJudol Bersama kita lawan Judi Online dengan Lihat, Lapor, Blokir di ioh.co.id/GenerasiAntiJudol
+                <p class="fbm-text py-2 px-2 indosat_regular">Jadilah #GenerasiAntiJudol. Bersama kita lawan Judi Online dengan Lihat, Lapor, Blokir di ioh.co.id/GenerasiAntiJudol
                 </p>
                 </div>
                 <div class="mt-2 mb-2">
