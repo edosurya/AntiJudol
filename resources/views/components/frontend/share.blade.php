@@ -1,6 +1,6 @@
 <div class="modal" id="share" data-backdrop="static" data-keyboard="false">
   <div class="modal-dialog modal-md d-flex align-items-center justify-content-center">
-    <div class="modal-content bg-red">
+    <div class="modal-content bg-red border-radius-lg">
         <div class="d-flex flex-row-reverse close">
             <button type="button" class="btn-close btn-close-white p-3" aria-label="Close" data-bs-dismiss="modal" id="btnCloseShare"></button>
         </div>

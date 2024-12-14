@@ -598,6 +598,10 @@ img.number {
 	border-bottom: none;
 }
 
+.modal-content {
+	border-radius: 25px;
+}
+
 .modal-footer {
 	border-top: none;
 }
