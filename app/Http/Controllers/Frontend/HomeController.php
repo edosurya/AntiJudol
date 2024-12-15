@@ -92,7 +92,7 @@ class HomeController extends Controller
             $t_dukung = $support_total;
 
             DB::commit();
-            // Mail::to($request->email)->send(new ThankYouMail($register));
+            Mail::to($request->email)->send(new ThankYouMail($register));
 
             return response()->json(['success' => true, 'message' => 'Data berhasil disimpan', 'with_toastr' => false, 'numbers' => $numbers, 't_lapor' => $t_lapor, 't_dukung' => $t_dukung]);
         } catch (\Throwable $th) {
