@@ -18,6 +18,7 @@ use App\Http\Controllers\Admin\HashtagController;
 
 Route::prefix('admin')->middleware(['auth', 'verified'])->as('admin.')->group(function () {
     Route::get('/dashboard',[DashboardController::class, 'index'])->name('dashboard');
+    Route::post('/dashboard',[DashboardController::class, 'filter'])->name('dashboard.filter');
 
     Route::get('/participants', [ParticipantController::class, 'index'])->name('participant.index');
     Route::post('/participants/export', ParticipantExportController::class)->name('participant.export');
