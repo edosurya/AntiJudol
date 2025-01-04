@@ -38,7 +38,7 @@
                     <div class="col-lg-2 col-sm-5">
                         <input id="endDate" class="form-control" type="date" name="endDate" value="{{ @$endDate }}" required />
                     </div>
-                    <div class="col-2 mt-1 text-right d-flex justify-content-end gap-2 ms-n5">
+                    <div class="col-2 mt-1 text-right d-flex justify-content-end gap-2 ms-n4">
                         <button type="submit" class="btn btn-primary btn-sm">Submit</button>
                         <a href="{{ route('admin.dashboard') }}" class="btn btn-secondary btn-sm">Reset</a>
                     </div>        
