@@ -27,8 +27,8 @@
     <div class="col-sm-12 card" style="background: transparent;">
         <div class="card-body">
         <form action="{{ route('admin.dashboard.filter') }}" method="post" enctype="multipart/form-data">
-            <div class="row justify-content-end gap-1 gap-md-0">
-                    <div class="col-lg-1 col-sm-1 mt-2">
+            <div class="row d-flex justify-content-end gap-2 gap-sm-0">
+                    <div class="col-12 col-sm-1 mt-2">
                         Date Filter
                     </div>
                     @csrf
@@ -38,7 +38,7 @@
                     <div class="col-lg-2 col-sm-5">
                         <input id="endDate" class="form-control" type="date" name="endDate" value="{{ @$endDate }}" required />
                     </div>
-                    <div class="col-lg-2 col-sm-2 mt-1 justify-content-end">
+                    <div class="col-2 mt-1 text-right d-flex justify-content-end gap-2 ms-n5">
                         <button type="submit" class="btn btn-primary btn-sm">Submit</button>
                         <a href="{{ route('admin.dashboard') }}" class="btn btn-secondary btn-sm">Reset</a>
                     </div>        
