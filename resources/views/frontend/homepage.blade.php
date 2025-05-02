@@ -16,7 +16,7 @@
 
       <section id="first" class="bg-100 section-has-bg" style="background-image: url({{ asset('frontend/images/webp/background.webp') }});" >
         <div class="mb-5 d-flex flex-row justify-content-between">
-            <a class="logo" href="#"><img src="{{ asset('frontend/images/webp/komdigi.webp') }}" alt="" width="120" /></a>
+            <a class="logo" href="#"><img src="{{ asset('frontend/images/webp/komdigi.webp') }}" alt="" width="100" /></a>
             <a class="logo" href="#"><img src="{{ asset('frontend/images/webp/IOH-logo.webp') }}" alt="" width="120" /></a>
         </div>
         <div class="container-lg mb-5">
